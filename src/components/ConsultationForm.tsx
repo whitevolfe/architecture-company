@@ -69,7 +69,7 @@ const ConsultationForm = () => {
           Book Your Free Architecture Consultation
         </h3>
         <p className='text-muted-foreground text-sm'>
-          Fill in your details and we'll get back to you within 24 hours.
+          ඔබගේ details පුරවන්න, අපි 24 hours ඇතුළත ඔබට contact කරමු.
         </p>
       </div>
 
