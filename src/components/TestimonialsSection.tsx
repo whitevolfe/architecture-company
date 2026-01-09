@@ -5,7 +5,7 @@ const testimonials = [
     name: 'Rajitha Perera',
     role: 'Homeowner, Colombo',
     content:
-      'ArchStudio අපේ dream home යථාර්ථයක් බවට පරිවර්තනය කළා. Modern Sri Lankan living පිළිබඳ ඔවුන්ගේ attention to detail සහ understanding ඉතා exceptionalයි. 3D visualization අපට නිවැරදිව දැකගැනීමට උදව් කළා.',
+      'Digital Architectural Studio අපේ dream home යථාර්ථයක් බවට පරිවර්තනය කළා. Modern Sri Lankan living පිළිබඳ ඔවුන්ගේ attention to detail සහ understanding ඉතා exceptionalයි. 3D visualization අපට නිවැරදිව දැකගැනීමට උදව් කළා.',
     rating: 5,
   },
   {
@@ -19,7 +19,7 @@ const testimonials = [
     name: 'Ashan De Silva',
     role: 'Property Developer, Galle',
     content:
-      'ArchStudio සමඟ multiple projects වල work කිරීම අතිශය සතුටකි. ඔවුන්ගේ designs innovative, practical සහ සෑම විටම budget තුළම වේ. ඔවුන් Sri Lankan market එක හොඳින් understand කරති.',
+      'Digital Architectural Studio සමඟ multiple projects වල work කිරීම අතිශය සතුටකි. ඔවුන්ගේ designs innovative, practical සහ සෑම විටම budget තුළම වේ. ඔවුන් Sri Lankan market එක හොඳින් understand කරති.',
     rating: 5,
   },
 ];

@@ -41,7 +41,7 @@ const Navigation = () => {
               </span>
             </div>
             <span className='font-display text-xl font-semibold text-foreground'>
-              ArchStudio
+              Digital Architectural Studio
             </span>
           </a>
 

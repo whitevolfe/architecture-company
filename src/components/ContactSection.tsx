@@ -64,10 +64,10 @@ const ContactSection = () => {
                 <div>
                   <div className='font-medium text-foreground mb-1'>Email</div>
                   <a
-                    href='mailto:hello@archstudio.lk'
+                    href='mailto:hello@DigitalArchitecturalStudio.lk'
                     className='text-muted-foreground hover:text-primary transition-colors'
                   >
-                    hello@archstudio.lk
+                    hello@DigitalArchitecturalStudio.lk
                   </a>
                 </div>
               </div>
@@ -118,7 +118,7 @@ const ContactSection = () => {
                 allowFullScreen
                 loading='lazy'
                 referrerPolicy='no-referrer-when-downgrade'
-                title='ArchStudio Location'
+                title='Digital Architectural Studio Location'
               />
             </div>
           </div>

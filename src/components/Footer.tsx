@@ -14,7 +14,7 @@ const Footer = () => {
                 </span>
               </div>
               <span className='font-display text-xl font-semibold'>
-                ArchStudio
+                Digital Architectural Studio
               </span>
             </div>
             <p className='text-off-white/70 text-sm mb-4'>
@@ -173,7 +173,7 @@ const Footer = () => {
               </li>
               <li className='flex items-center gap-3 text-off-white/70 text-sm'>
                 <Mail className='w-4 h-4 text-gold' />
-                hello@archstudio.lk
+                hello@DigitalArchitecturalStudio.lk
               </li>
               <li className='flex items-start gap-3 text-off-white/70 text-sm'>
                 <MapPin className='w-4 h-4 text-gold flex-shrink-0 mt-0.5' />
@@ -187,7 +187,8 @@ const Footer = () => {
         <div className='pt-8 border-t border-off-white/10'>
           <div className='flex flex-col md:flex-row justify-between items-center gap-4'>
             <p className='text-off-white/50 text-sm'>
-              © 2024 ArchStudio Sri Lanka. All rights reserved.
+              © 2024 Digital Architectural Studio Sri Lanka. All rights
+              reserved.
             </p>
             <div className='flex gap-6'>
               <a
