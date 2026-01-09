@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ConsultationForm from './ConsultationForm';
-import heroImage from '@/assets/hero-architecture.jpg';
+import heroImage from '@/assets/hero-image.png';
 
 const HeroSection = () => {
   return (
