@@ -35,13 +35,9 @@ const Navigation = () => {
         <div className='flex items-center justify-between h-20'>
           {/* Logo */}
           <a href='#' className='flex items-center gap-2'>
-            <div className='w-10 h-10 bg-primary rounded-lg flex items-center justify-center'>
-              <span className='text-primary-foreground font-display font-bold text-xl'>
-                A
-              </span>
-            </div>
+            <div className='w-10 h-10 bg-primary-red rounded-lg flex items-center justify-center'></div>
             <span className='font-display text-xl font-semibold text-foreground'>
-              Digital Architectural Studio
+              My Plan Architectural Studio
             </span>
           </a>
 

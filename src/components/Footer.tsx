@@ -2,29 +2,25 @@ import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className='bg-charcoal text-off-white py-16'>
+    <footer className='bg-charcoal text-off-white bg-primary-bg py-16'>
       <div className='container-custom'>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12'>
           {/* Brand */}
           <div className='lg:col-span-1'>
             <div className='flex items-center gap-2 mb-4'>
-              <div className='w-10 h-10 bg-gold rounded-lg flex items-center justify-center'>
-                <span className='text-charcoal font-display font-bold text-xl'>
-                  A
-                </span>
-              </div>
-              <span className='font-display text-xl font-semibold'>
-                Digital Architectural Studio
+              <div className='w-10 h-10 bg-primary-red rounded-lg flex items-center justify-center'></div>
+              <span className='font-display text-text-light text-xl font-semibold'>
+                My Plan Architectural Studio
               </span>
             </div>
-            <p className='text-off-white/70 text-sm mb-4'>
+            <p className='text-text-light/70 hover:text-gold transition-colors text-sm mb-4'>
               Premium architecture design & planning agency in Sri Lanka.
               Creating modern, sustainable spaces since 2009.
             </p>
             <div className='flex gap-4'>
               <a
                 href='#'
-                className='w-10 h-10 bg-off-white/10 rounded-full flex items-center justify-center hover:bg-gold transition-colors'
+                className='w-10 h-10 bg-dark-teal/20 rounded-full flex items-center justify-center hover:bg-primary-red transition-colors'
               >
                 <svg
                   className='w-5 h-5'
@@ -36,7 +32,7 @@ const Footer = () => {
               </a>
               <a
                 href='#'
-                className='w-10 h-10 bg-off-white/10 rounded-full flex items-center justify-center hover:bg-gold transition-colors'
+                className='w-10 h-10 bg-dark-teal/20 rounded-full flex items-center justify-center hover:bg-sage-green transition-colors'
               >
                 <svg
                   className='w-5 h-5'
@@ -48,7 +44,7 @@ const Footer = () => {
               </a>
               <a
                 href='#'
-                className='w-10 h-10 bg-off-white/10 rounded-full flex items-center justify-center hover:bg-gold transition-colors'
+                className='w-10 h-10 bg-dark-teal/20 rounded-full flex items-center justify-center hover:bg-sage-green transition-colors'
               >
                 <svg
                   className='w-5 h-5'
@@ -63,14 +59,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className='font-display font-semibold text-lg mb-4'>
+            <h4 className='font-display text-text-light font-semibold text-lg mb-4'>
               Quick Links
             </h4>
             <ul className='space-y-3'>
               <li>
                 <a
                   href='#services'
-                  className='text-off-white/70 hover:text-gold transition-colors text-sm'
+                  className='text-text-light/70 hover:text-gold transition-colors text-sm'
                 >
                   Our Services
                 </a>
@@ -78,23 +74,23 @@ const Footer = () => {
               <li>
                 <a
                   href='#portfolio'
-                  className='text-off-white/70 hover:text-gold transition-colors text-sm'
+                  className='text-text-light/70 hover:text-gold transition-colors text-sm'
                 >
                   Portfolio
                 </a>
               </li>
               <li>
                 <a
-                  href='#why-us'
-                  className='text-off-white/70 hover:text-gold transition-colors text-sm'
+                  href='#about'
+                  className='text-text-light/70 hover:text-gold transition-colors text-sm'
                 >
-                  Why Choose Us
+                  About Us
                 </a>
               </li>
               <li>
                 <a
                   href='#process'
-                  className='text-off-white/70 hover:text-gold transition-colors text-sm'
+                  className='text-text-light/70 hover:text-gold transition-colors text-sm'
                 >
                   Our Process
                 </a>
@@ -102,7 +98,7 @@ const Footer = () => {
               <li>
                 <a
                   href='#testimonials'
-                  className='text-off-white/70 hover:text-gold transition-colors text-sm'
+                  className='text-text-light/70 hover:text-gold transition-colors text-sm'
                 >
                   Testimonials
                 </a>
@@ -112,14 +108,14 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className='font-display font-semibold text-lg mb-4'>
+            <h4 className='font-display text-text-light font-semibold text-lg mb-4'>
               Services
             </h4>
             <ul className='space-y-3'>
               <li>
                 <a
                   href='#services'
-                  className='text-off-white/70 hover:text-gold transition-colors text-sm'
+                  className='text-text-light/70 hover:text-gold transition-colors text-sm'
                 >
                   New Building Design
                 </a>
@@ -127,7 +123,7 @@ const Footer = () => {
               <li>
                 <a
                   href='#services'
-                  className='text-off-white/70 hover:text-gold transition-colors text-sm'
+                  className='text-text-light/70 hover:text-gold transition-colors text-sm'
                 >
                   Renovation & Remodeling
                 </a>
@@ -135,7 +131,7 @@ const Footer = () => {
               <li>
                 <a
                   href='#services'
-                  className='text-off-white/70 hover:text-gold transition-colors text-sm'
+                  className='text-text-light/70 hover:text-gold transition-colors text-sm'
                 >
                   Interior Design
                 </a>
@@ -143,7 +139,7 @@ const Footer = () => {
               <li>
                 <a
                   href='#services'
-                  className='text-off-white/70 hover:text-gold transition-colors text-sm'
+                  className='text-text-light/70 hover:text-gold transition-colors text-sm'
                 >
                   3D Visualization
                 </a>
@@ -151,7 +147,7 @@ const Footer = () => {
               <li>
                 <a
                   href='#services'
-                  className='text-off-white/70 hover:text-gold transition-colors text-sm'
+                  className='text-text-light/70 hover:text-gold transition-colors text-sm'
                 >
                   Landscape Design
                 </a>
@@ -161,22 +157,24 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className='font-display font-semibold text-lg mb-4'>Contact</h4>
+            <h4 className='font-display text-text-light font-semibold text-lg mb-4'>
+              Contact
+            </h4>
             <ul className='space-y-3'>
-              <li className='flex items-center gap-3 text-off-white/70 text-sm'>
-                <Phone className='w-4 h-4 text-gold' />
+              <li className='flex items-center gap-3 text-text-light/70 hover:text-gold transition-colors text-sm'>
+                <Phone className='w-4 h-4 text-text-light' />
                 +94 77 270 9909
               </li>
-              <li className='flex items-center gap-3 text-off-white/70 text-sm'>
-                <MessageCircle className='w-4 h-4 text-gold' />
+              <li className='flex items-center gap-3 text-text-light/70 hover:text-gold transition-colors text-sm'>
+                <MessageCircle className='w-4 h-4 text-text-light' />
                 +94 77 270 9909
               </li>
-              <li className='flex items-center gap-3 text-off-white/70 text-sm'>
-                <Mail className='w-4 h-4 text-gold' />
+              <li className='flex items-center gap-3 text-text-light/70 hover:text-gold transition-colors text-sm'>
+                <Mail className='w-4 h-4 text-text-light' />
                 hello@DigitalArchitecturalStudio.lk
               </li>
-              <li className='flex items-start gap-3 text-off-white/70 text-sm'>
-                <MapPin className='w-4 h-4 text-gold flex-shrink-0 mt-0.5' />
+              <li className='flex items-start gap-3 text-text-light/70 hover:text-gold transition-colors text-sm'>
+                <MapPin className='w-4 h-4 text-text-light flex-shrink-0 mt-0.5' />
                 42 Galle Road, Colombo 03, Sri Lanka
               </li>
             </ul>
@@ -186,20 +184,20 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className='pt-8 border-t border-off-white/10'>
           <div className='flex flex-col md:flex-row justify-between items-center gap-4'>
-            <p className='text-off-white/50 text-sm'>
-              © 2024 Digital Architectural Studio Sri Lanka. All rights
+            <p className='text-text-light/70 hover:text-gold transition-colors text-sm'>
+              © 2024 My Plan Architectural Studio Sri Lanka. All rights
               reserved.
             </p>
             <div className='flex gap-6'>
               <a
                 href='#'
-                className='text-off-white/50 hover:text-gold transition-colors text-sm'
+                className='text-text-light/70 hover:text-gold transition-colors hover:text-primary-red transition-colors text-sm'
               >
                 Privacy Policy
               </a>
               <a
                 href='#'
-                className='text-off-white/50 hover:text-gold transition-colors text-sm'
+                className='text-text-light/70 hover:text-gold transition-colors hover:text-primary-red transition-colors text-sm'
               >
                 Terms of Service
               </a>

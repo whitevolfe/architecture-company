@@ -34,14 +34,21 @@
 
     --radius: 0.5rem;
 
-    /* Custom tokens */
-    --gold: 42 60% 50%;
-    --gold-light: 42 50% 65%;
-    --dark-green: 160 30% 20%;
-    --dark-green-light: 160 25% 30%;
-    --charcoal: 220 20% 10%;
-    --off-white: 40 20% 98%;
-    --cream: 40 30% 96%;
+    /* Brand Color System */
+    /* Primary Colors */
+    --primary-bg: 0 0% 11%; /* #192123 - Primary background (dark charcoal) */
+    --secondary-bg: 165 30% 18%; /* #2A3F36 - Secondary background / sections */
+
+    /* Accent Colors */
+    --primary-accent: 0 75% 45%; /* #CE1D2F - Primary accent (buttons, CTAs, highlights) */
+    --secondary-accent: 0 85% 32%; /* #7E1418 - Secondary accent (hover states, borders) */
+
+    /* Supporting Color */
+    --supporting-green: 120 15% 45%; /* #7E9F84 - Muted green (icons, dividers, subtle UI elements) */
+
+    /* Text Colors */
+    --text-light: 0 0% 98%; /* White text for dark backgrounds */
+    --text-muted: 120 10% 65%; /* Muted text for readability */
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

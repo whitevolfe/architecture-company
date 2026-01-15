@@ -48,17 +48,17 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id='services' className='section-padding bg-cream'>
+    <section id='services' className='section-padding bg-secondary-bg'>
       <div className='container-custom'>
         {/* Section Header */}
         <div className='text-center max-w-3xl mx-auto mb-16'>
-          <span className='inline-block text-sm font-medium text-accent uppercase tracking-wider mb-4'>
+          <span className='inline-block text-sm font-medium text-supporting-green uppercase tracking-wider mb-4'>
             Our Services
           </span>
-          <h2 className='heading-lg text-foreground mb-4'>
+          <h2 className='heading-lg text-text-light mb-4'>
             Comprehensive Architecture & Design Solutions
           </h2>
-          <p className='body-base text-muted-foreground'>
+          <p className='body-base text-text-muted'>
             From initial concept to final delivery, we provide end-to-end
             architectural services tailored to the Sri Lankan context.
           </p>
@@ -69,16 +69,16 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className='group bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300 hover:-translate-y-1'
+              className='group bg-primary-bg p-8 rounded-2xl border border-secondary-accent/30 hover:border-secondary-accent hover:shadow-elegant-lg transition-all duration-300 hover:-translate-y-1'
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className='w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300'>
-                <service.icon className='w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300' />
+              <div className='w-14 h-14 bg-supporting-green/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-accent group-hover:scale-110 transition-all duration-300'>
+                <service.icon className='w-7 h-7 text-supporting-green group-hover:text-text-light transition-colors duration-300' />
               </div>
-              <h3 className='heading-sm text-foreground mb-3'>
+              <h3 className='heading-sm text-text-light mb-3'>
                 {service.title}
               </h3>
-              <p className='text-muted-foreground'>{service.description}</p>
+              <p className='text-text-muted'>{service.description}</p>
             </div>
           ))}
         </div>

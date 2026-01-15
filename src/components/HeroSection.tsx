@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ConsultationModal from './ConsultationModal';
-import heroImage from '@/assets/hero-image.png';
+import heroImage from '@/assets/architechpic2.jpeg';
 
 const HeroSection = () => {
   return (
@@ -18,7 +18,7 @@ const HeroSection = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className='absolute inset-0 via-background/80 to-background/40' />
+        <div className='absolute inset-0 bg-primary-bg/80' />
       </div>
 
       {/* Content */}
@@ -26,31 +26,32 @@ const HeroSection = () => {
         <div className='max-w-4xl mx-auto text-center'>
           {/* Left Content */}
           <div className='animate-fade-up'>
-            <div className='inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full mb-6'>
-              <span className='w-2 h-2 bg-accent rounded-full animate-pulse' />
-              <span className='text-sm font-medium text-primary font-bold'>
+            <div className='inline-flex items-center gap-2 px-4 py-2 bg-supporting-green/20 rounded-full mb-6'>
+              <span className='w-2 h-2 bg-supporting-green rounded-full animate-pulse' />
+              <span className='text-sm font-medium text-text-light font-bold'>
                 Premium Architecture Studio in Sri Lanka
               </span>
             </div>
 
-            <h1 className='heading-xl text-off-white mb-6'>
+            <h1 className='heading-xl text-text-light mb-6'>
               Modern Architecture &{' '}
-              <span className='text-primary'>Smart Building</span> Solutions
+              <span className='text-primary-accent'>Smart Building</span>{' '}
+              Solutions
             </h1>
 
-            <p className='body-lg text-primary font-bold mb-4 max-w-2xl mx-auto'>
+            <p className='body-lg text-supporting-green font-bold mb-4 max-w-2xl mx-auto'>
               Transform your vision into architectural masterpieces. From new
               builds to renovations, we bring world-class design to Sri Lanka.
             </p>
 
             <div className='flex flex-wrap gap-3 mb-8 justify-center'>
-              <span className='px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full'>
+              <span className='px-3 py-1 bg-secondary-accent text-text-light text-sm rounded-full'>
                 New Buildings
               </span>
-              <span className='px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full'>
+              <span className='px-3 py-1 bg-secondary-accent text-text-light text-sm rounded-full'>
                 Renovations
               </span>
-              <span className='px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full'>
+              <span className='px-3 py-1 bg-secondary-accent text-text-light text-sm rounded-full'>
                 Interior & Exterior Design
               </span>
             </div>
@@ -70,28 +71,26 @@ const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            <div className='grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border max-w-md mx-auto'>
+            <div className='grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-secondary-accent/30 max-w-md mx-auto'>
               <div>
-                <div className='text-3xl md:text-4xl font-display font-bold text-primary'>
+                <div className='text-3xl md:text-4xl font-display font-bold text-primary-accent'>
                   15+
                 </div>
-                <div className='text-sm text-muted-foreground'>
-                  Years Experience
-                </div>
+                <div className='text-sm text-text-muted'>Years Experience</div>
               </div>
               <div>
-                <div className='text-3xl md:text-4xl font-display font-bold text-primary'>
+                <div className='text-3xl md:text-4xl font-display font-bold text-primary-accent'>
                   500+
                 </div>
-                <div className='text-sm text-muted-foreground'>
+                <div className='text-sm text-text-muted'>
                   Projects Completed
                 </div>
               </div>
               <div>
-                <div className='text-3xl md:text-4xl font-display font-bold text-primary'>
+                <div className='text-3xl md:text-4xl font-display font-bold text-primary-accent'>
                   98%
                 </div>
-                <div className='text-sm text-muted-foreground'>
+                <div className='text-sm text-text-muted'>
                   Client Satisfaction
                 </div>
               </div>
