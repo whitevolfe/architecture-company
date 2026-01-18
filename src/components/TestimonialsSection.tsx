@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 import buildingConcept1 from '@/assets/building-concept1.png';
 import buildingConcept2 from '@/assets/building-concept2.png';
 import buildingConcept3 from '@/assets/building-concept3.png';
@@ -54,7 +55,14 @@ const TestimonialsSection = () => {
 
         {/* Testimonials Carousel */}
         <div className='relative max-w-4xl mx-auto'>
-          <Carousel className='w-full'>
+          <Carousel
+            className='w-full'
+            plugins={[
+              Autoplay({
+                delay: 3000,
+              }),
+            ]}
+          >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index}>
