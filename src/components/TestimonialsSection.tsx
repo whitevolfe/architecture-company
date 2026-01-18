@@ -1,4 +1,14 @@
 import { Star, Quote } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
+import buildingConcept1 from '@/assets/building-concept1.png';
+import buildingConcept2 from '@/assets/building-concept2.png';
+import buildingConcept3 from '@/assets/building-concept3.png';
 
 const testimonials = [
   {
@@ -42,48 +52,103 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
+        {/* Testimonials Carousel */}
+        <div className='relative max-w-4xl mx-auto'>
+          <Carousel className='w-full'>
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index}>
+                  <div className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'>
+                    {/* Quote Icon */}
+                    <div className='w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-6'>
+                      <Quote className='w-5 h-5 text-accent' />
+                    </div>
+
+                    {/* Rating */}
+                    <div className='flex gap-1 mb-4'>
+                      {Array.from({ length: testimonial.rating }).map(
+                        (_, i) => (
+                          <Star
+                            key={i}
+                            className='w-4 h-4 fill-accent text-accent'
+                          />
+                        )
+                      )}
+                    </div>
+
+                    {/* Content */}
+                    <p className='text-foreground mb-6 leading-relaxed'>
+                      "{testimonial.content}"
+                    </p>
+
+                    {/* Author */}
+                    <div className='flex items-center gap-4'>
+                      <div className='w-12 h-12 bg-primary rounded-full flex items-center justify-center'>
+                        <span className='text-primary-foreground font-medium'>
+                          {testimonial.name.charAt(0)}
+                        </span>
+                      </div>
+                      <div>
+                        <div className='font-medium text-foreground'>
+                          {testimonial.name}
+                        </div>
+                        <div className='text-sm text-muted-foreground'>
+                          {testimonial.role}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+
+        {/* Residential Building Concept */}
+        <div className='text-center max-w-3xl mx-auto mb-16 mt-16'>
+          <h2 className='heading-lg text-foreground mb-4'>
+            Residential Building Concept
+          </h2>
+          <p className='body-base text-muted-foreground'>
+            Explore our innovative residential building concepts designed to
+            inspire modern living.
+          </p>
+        </div>
+
+        {/* Concept Images Grid */}
         <div className='grid md:grid-cols-3 gap-8'>
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.name}
-              className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'
-            >
-              {/* Quote Icon */}
-              <div className='w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-6'>
-                <Quote className='w-5 h-5 text-accent' />
-              </div>
-
-              {/* Rating */}
-              <div className='flex gap-1 mb-4'>
-                {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <Star key={i} className='w-4 h-4 fill-accent text-accent' />
-                ))}
-              </div>
-
-              {/* Content */}
-              <p className='text-foreground mb-6 leading-relaxed'>
-                "{testimonial.content}"
-              </p>
-
-              {/* Author */}
-              <div className='flex items-center gap-4'>
-                <div className='w-12 h-12 bg-primary rounded-full flex items-center justify-center'>
-                  <span className='text-primary-foreground font-medium'>
-                    {testimonial.name.charAt(0)}
-                  </span>
-                </div>
-                <div>
-                  <div className='font-medium text-foreground'>
-                    {testimonial.name}
-                  </div>
-                  <div className='text-sm text-muted-foreground'>
-                    {testimonial.role}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+          <div className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'>
+            <img
+              src={buildingConcept1}
+              alt='Building Concept 1'
+              className='w-full h-150 object-cover rounded-lg mb-4'
+            />
+            <h3 className='text-lg font-semibold text-foreground text-center'>
+              Concept 1
+            </h3>
+          </div>
+          <div className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'>
+            <img
+              src={buildingConcept2}
+              alt='Building Concept 2'
+              className='w-full h-150 object-cover rounded-lg mb-4'
+            />
+            <h3 className='text-lg font-semibold text-foreground text-center'>
+              Concept 2
+            </h3>
+          </div>
+          <div className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'>
+            <img
+              src={buildingConcept3}
+              alt='Building Concept 3'
+              className='w-full h-150 object-cover rounded-lg mb-4'
+            />
+            <h3 className='text-lg font-semibold text-foreground text-center'>
+              Concept 3
+            </h3>
+          </div>
         </div>
       </div>
     </section>
