@@ -80,7 +80,7 @@ const TestimonialsSection = () => {
                             key={i}
                             className='w-4 h-4 fill-accent text-accent'
                           />
-                        )
+                        ),
                       )}
                     </div>
 
@@ -131,9 +131,6 @@ const TestimonialsSection = () => {
               alt='Building Concept 1'
               className='w-full h-150 object-cover rounded-lg mb-4'
             />
-            <h3 className='text-lg font-semibold text-foreground text-center'>
-              Concept 1
-            </h3>
           </div>
           <div className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'>
             <img
@@ -141,9 +138,6 @@ const TestimonialsSection = () => {
               alt='Building Concept 2'
               className='w-full h-150 object-cover rounded-lg mb-4'
             />
-            <h3 className='text-lg font-semibold text-foreground text-center'>
-              Concept 2
-            </h3>
           </div>
           <div className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'>
             <img
@@ -151,9 +145,6 @@ const TestimonialsSection = () => {
               alt='Building Concept 3'
               className='w-full h-150 object-cover rounded-lg mb-4'
             />
-            <h3 className='text-lg font-semibold text-foreground text-center'>
-              Concept 3
-            </h3>
           </div>
         </div>
       </div>
