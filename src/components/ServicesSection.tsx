@@ -92,7 +92,7 @@ const ServicesSection = () => {
                     <img
                       src={service.icon}
                       alt={service.title}
-                      className='w-12 h-12 rounded-lg'
+                      className='w-20 h-30 rounded-lg'
                     />
                     <h3 className='heading-sm text-text-light text-left'>
                       {service.title}
