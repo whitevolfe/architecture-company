@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ConsultationModal from './ConsultationModal';
-import heroImage from '@/assets/architechpic2.jpeg';
+import heroVideo from '@/assets/herosection-video.mp4';
 
 const HeroSection = () => {
   return (
@@ -9,15 +9,17 @@ const HeroSection = () => {
       id='consultation'
       className='relative min-h-screen flex items-center pt-20'
     >
-      {/* Background Image */}
-      <div
-        className='absolute inset-0 z-0'
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+      {/* Background Video */}
+      <div className='absolute inset-0 z-0'>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className='w-full h-full object-cover'
+        >
+          <source src={heroVideo} type='video/mp4' />
+        </video>
         <div className='absolute inset-0 bg-primary-bg/80' />
       </div>
 
