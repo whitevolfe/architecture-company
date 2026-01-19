@@ -1,48 +1,62 @@
+import buildingDesignIcon from '../assets/BUILDING DESIGNING SERVICE (HOUSE PLANNING).png';
+import modelingIcon from '../assets/3D MODELLING.png';
+import interiorExteriorIcon from '../assets/INTERIOR AND EXTERIOR DESIGNING.png';
+import boqIcon from '../assets/BOQ.png';
+import detailDrawingsIcon from '../assets/DETAIL DRAWINGS.png';
+import drawingOfficeIcon from '../assets/DRAWING OFFICE SERVICE AND PLANNING AGENT.png';
+import remodelingIcon from '../assets/REMODELING & ALTERNATION SERVICE.png';
+import constructionIcon from '../assets/BUILDING CONSTRUCTION.png';
 import {
-  Building2,
-  Hammer,
-  Paintbrush,
-  Trees,
-  Box,
-  FileText,
-} from 'lucide-react';
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from './ui/accordion';
 
 const services = [
   {
-    icon: Building2,
-    title: 'New Building Design',
-    description:
-      'Concept එකෙන් Construction-ready plans දක්වා. ඔබගේ vision එකට අනුව modern homes, commercial buildings සහ mixed-use developments අපි design කරමු.',
+    icon: buildingDesignIcon,
+    title: '01. BUILDING DESIGNING SERVICE',
+    description: `A. House Planning (photos)\nB. Commercial Buildings (photos)\n  a) Apartments\n  b) Hostels\n  c) Hotels\n  d) Villas\n  e) Cabanas\n  f) Hospitals\n  g) Shopping Complex\n  h) Factory / Industrial\n  i) Cinema\n  j) Stadium\nC. Mix Residences`,
   },
   {
-    icon: Hammer,
-    title: 'Renovation & Remodeling',
-    description:
-      'Thoughtful renovations හරහා existing spaces transform කරමින්, architectural heritage එකට ගෞරව දක්වමින් modernize කර, functionality උපරිම ලෙස වැඩි කරමු.',
+    icon: modelingIcon,
+    title: '02. 3D MODELLING (video)',
+    description: `English: From the beginning of your construction, we recreate your land using computer aids and show you step by step how your building will be placed through 3D designs. We provide separate 3D designs for all floors and arrange all designs so you can see the entire building appearance. We provide photos/videos with before and after views of the building as per your requirements (for viewing by those living abroad).\n\nTamil: உங்கள் கட்டுமானத்தின் தொடக்கத்திலிருந்து, நாங்கள் கணினி உதவிகளைப் பயன்படுத்தி உங்கள் தரையை மறுஉருவாக்கி, 3D வடிவமைப்புகளின் மூலம் உங்கள் கட்டிடம் எவ்வாறு வைக்கப்படும் என்பதை படிப்படியாக உங்களுக்குக் காட்சி அளிக்கிறோம். அனைத்து தரைகளுக்கும் தனித்தனியாக 3D வடிவமைப்புகளை வழங்குகிறோம் மற்றும் அனைத்து வடிவமைப்புகளையும் ஏற்பாடு செய்கிறோம், எனவே நீங்கள் முழு கட்டிடத்தின் தோற்றத்தையும் காணலாம். உங்கள் தேவைகளுக்கு ஏற்ப கட்டிடத்தின் முன் மற்றும் பின் காட்சிகளுடன் புகைப்படங்கள்/வீடியோக்களை வழங்குகிறோம் (வெளிநாட்டில் வசிப்பவர்களுக்கு பார்வைக்கு).`,
   },
   {
-    icon: Paintbrush,
-    title: 'Interior Design',
-    description:
-      'ඔබගේ personality එක reflect වන stunning interiors create කිරීම අපගේ අරමුණයි. අපගේ designers විසින් beautiful, functional සහ timeless spaces craft කරනු ලැබේ.',
+    icon: interiorExteriorIcon,
+    title: '03. INTERIOR AND EXTERIOR DESIGNING (photos)',
+    description: `English: We provide the overall appearance of your buildings including the exterior appearance, exterior surfaces and facade, walls, windows, doors and landscaping in a way that suits you at a very high level.\n\nInterior means the systems that serve rooms and areas, namely plumbing and electrical installations and power supply methods, as well as aesthetic elements in those spaces, wall color matching and suitable furniture introduction.\n\nTamil: உங்கள் கட்டிடங்களின் மொத்த தோற்றத்தை, வெளிப்புற தோற்றம், வெளிப்புற மேற்பரப்புகள் மற்றும் முகப்பு, சுவர்கள், ஜன்னல்கள், கதவுகள் மற்றும் நிலப்பரப்பு அலங்காரம் ஆகியவற்றை உள்ளடக்கியது, உங்களுக்கு ஏற்ற வகையில் மிக உயர்ந்த அளவில் வழங்குகிறோம்.\n\nஉள்துறை என்பது அறைகள் மற்றும் பகுதிகளுக்கு சேவை செய்யும் அமைப்புகளைக் குறிக்கிறது, அதாவது குழாய் மற்றும் மின்சார நிறுவல்கள் மற்றும் சக்தி வழங்கல் முறைகள், மற்றும் அந்த இடங்களில் உள்ள ஸ்டெத்திக் கூறுகள், சுவர் வண்ண பொருத்தம் மற்றும் பொருத்தமான உள்நாட்டு பொருட்கள் அறிமுகம்.`,
   },
   {
-    icon: Trees,
-    title: 'Exterior & Landscape',
-    description:
-      'ඔබගේ architecture එකට complement වන outdoor spaces design කිරීම අපගේ විශේෂත්වයයි. Gardens සිට driveways දක්වා cohesive exterior environments අප විසින් create කරනු ලැබේ.',
+    icon: boqIcon,
+    title: '04. BOQ (ප්‍රමාණ පත්‍රය / Quantity Sheet / Estimation)',
+    description: `English: We provide complete estimates with all necessary details for obtaining loans for all your requirements.\n\nTamil: உங்கள் எல்லா தேவைகளுக்கும் கடன்களைப் பெறுவதற்கான தேவையான எல்லா விவரங்களுடனும் முழுமையான மதிப்பீடுகளை வழங்குகிறோம்.`,
   },
   {
-    icon: Box,
-    title: '3D Visualization',
-    description:
-      'Project එක build වීමට පෙරම එය අවබෝධ කරගැනීමට, අපගේ photorealistic 3D renders සහ walkthroughs ඔබගේ vision එක ජීවමාන කරයි.',
+    icon: detailDrawingsIcon,
+    title: '05. DETAIL DRAWINGS',
+    description: `A. Structure detail drawings - Structural details.\n  We provide detailed drawings for the structural details of your buildings, including concepts, beams, columns, slabs, etc., created and certified by relevant professionals.\n  Furthermore, we provide services to employ qualified officials to inspect whether the work is being carried out according to those notes during the construction of the building.\n\nB. ELECTRICAL DETAIL DRAWING - Electrical circuit details.\n  For guiding electrical installation and maintenance, we design the electrical system technically using lines, symbols and dimensions to represent the design visually.\n  In Sinhala, this is described as a diagram that shows how an electrical system like wiring for a house is set up.\n  Similarly, providing power in a way that suits the spaces of the house or building is also important for you to recognize.\n  Likewise, this circuit detail serves as a plan for electricians and a guide for future work.\n\nC. PLUMBING\n  01. INLET - Water pipe system.\n  02. WASTE WATER - Removing dirty water.\n  03. SEWAGE - Dirty water coming out of toilets.\n  04. STORM WATER MANAGEMENT - Rainwater management.\n\nD. OPENINGS\n  Doors, Windows, Arches, etc., openable spaces.\n\nE. ROOFING - Roof\n  Awareness about Roof Structure and Material.\n\nF. FINISHING - Building completion.\n  Awareness about Floor, Walls, Ceiling, Skirting, etc.\n\nG. LANDSCAPING\n  Detailed awareness about land decoration and providing that service.`,
   },
   {
-    icon: FileText,
-    title: 'Planning & Approvals',
+    icon: drawingOfficeIcon,
+    title:
+      '06. DRAWING OFFICE SERVICE AND PLANNING AGENT - (සැලසුම් ඇඳීම් නියෝජිත හා කාර්යාල සේවාව)',
     description:
-      'Sri Lankan building regulations පිළිබඳ සියලු කටයුතු පහසුවෙන් manage කරමින්, documentation සහ approval processes සියල්ල ඔබ වෙනුවෙන් අප විසින් handle කරනු ලැබේ.',
+      'Drawing office services and planning agent services for architectural planning and office needs.',
+  },
+  {
+    icon: remodelingIcon,
+    title:
+      '07. REMODELING & ALTERNATION SERVICE (පැරණි ගොඩනැගිල්ලට නව පෙනුමක්...)',
+    description:
+      'Remodeling and alteration services to give a new look to old buildings.',
+  },
+  {
+    icon: constructionIcon,
+    title: '08. BUILDING CONSTRUCTION - (ගොඩනැගිලි ඉදිකිරීම්)',
+    description: 'Building construction services.',
   },
 ];
 
@@ -64,23 +78,35 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8'>
-          {services.map((service, index) => (
-            <div
-              key={service.title}
-              className='group bg-primary-bg p-8 rounded-2xl border border-secondary-accent/30 hover:border-secondary-accent hover:shadow-elegant-lg transition-all duration-300 hover:-translate-y-1'
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className='w-14 h-14 bg-supporting-green/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-accent group-hover:scale-110 transition-all duration-300'>
-                <service.icon className='w-7 h-7 text-supporting-green group-hover:text-text-light transition-colors duration-300' />
-              </div>
-              <h3 className='heading-sm text-text-light mb-3'>
-                {service.title}
-              </h3>
-              <p className='text-text-muted'>{service.description}</p>
-            </div>
-          ))}
+        {/* Services Accordion */}
+        <div className='max-w-4xl mx-auto'>
+          <Accordion type='single' collapsible className='space-y-4'>
+            {services.map((service, index) => (
+              <AccordionItem
+                key={service.title}
+                value={`item-${index}`}
+                className='bg-primary-bg rounded-2xl border border-secondary-accent/30 hover:border-secondary-accent transition-all duration-300'
+              >
+                <AccordionTrigger className='px-8 py-6 hover:no-underline'>
+                  <div className='flex items-center gap-4'>
+                    <img
+                      src={service.icon}
+                      alt={service.title}
+                      className='w-12 h-12 rounded-lg'
+                    />
+                    <h3 className='heading-sm text-text-light text-left'>
+                      {service.title}
+                    </h3>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className='px-8 pb-6'>
+                  <div className='text-text-muted whitespace-pre-line'>
+                    {service.description}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>
