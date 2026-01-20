@@ -74,7 +74,10 @@ const ServicesSection = () => {
 
         {/* Services Collage Buttons */}
         <div className='grid grid-cols-12 gap-4 md:gap-6 lg:gap-8 [grid-auto-rows:minmax(180px,auto)]'>
-          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+          <button
+            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
+ relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+          >
             <img
               src={services[0].icon}
               alt={services[0].title}
@@ -84,7 +87,10 @@ const ServicesSection = () => {
               {services[0].title}
             </span>
           </button>
-          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+          <button
+            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
+ relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+          >
             <img
               src={services[1].icon}
               alt={services[1].title}
@@ -94,7 +100,10 @@ const ServicesSection = () => {
               {services[1].title}
             </span>
           </button>
-          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+          <button
+            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
+ relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+          >
             <img
               src={services[2].icon}
               alt={services[2].title}
@@ -104,7 +113,10 @@ const ServicesSection = () => {
               {services[2].title}
             </span>
           </button>
-          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+          <button
+            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
+ relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+          >
             <img
               src={services[3].icon}
               alt={services[3].title}
@@ -114,7 +126,10 @@ const ServicesSection = () => {
               {services[3].title}
             </span>
           </button>
-          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+          <button
+            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
+ relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+          >
             <img
               src={services[4].icon}
               alt={services[4].title}
@@ -124,7 +139,10 @@ const ServicesSection = () => {
               {services[4].title}
             </span>
           </button>
-          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+          <button
+            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
+ relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+          >
             <img
               src={services[5].icon}
               alt={services[5].title}
@@ -134,7 +152,10 @@ const ServicesSection = () => {
               {services[5].title}
             </span>
           </button>
-          <button className='col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-3 row-span-1 md:row-span-2 relative rotate-3 rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-10 before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+          <button
+            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
+ relative rotate-3 rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-10 before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+          >
             <img
               src={services[6].icon}
               alt={services[6].title}
@@ -145,7 +166,10 @@ const ServicesSection = () => {
             </span>
           </button>
 
-          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+          <button
+            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
+ relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+          >
             <img
               src={services[7].icon}
               alt={services[7].title}
@@ -155,7 +179,10 @@ const ServicesSection = () => {
               {services[7].title}
             </span>
           </button>
-          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+          <button
+            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
+ relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+          >
             <img
               src={services[5].icon}
               alt={services[5].title}

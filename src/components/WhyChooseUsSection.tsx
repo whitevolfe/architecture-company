@@ -86,7 +86,7 @@ const WhyChooseUsSection = () => {
         <div className='mt-20 grid grid-cols-2 md:grid-cols-4 gap-8'>
           <div className='text-center'>
             <div className='text-4xl md:text-5xl font-display font-bold text-primary-accent mb-2'>
-              15+
+              25+
             </div>
             <div className='text-supporting-green text-sm'>
               Years of Excellence
