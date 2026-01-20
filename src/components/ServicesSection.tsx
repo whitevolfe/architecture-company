@@ -85,122 +85,211 @@ const ServicesSection = () => {
         {/* Services Collage Buttons */}
         <div className='grid grid-cols-12 gap-4 md:gap-6 lg:gap-8 [grid-auto-rows:minmax(180px,auto)]'>
           <button
-            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
- relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+            className='
+  col-span-6 md:col-span-4 lg:col-span-3
+  relative
+  rotate-[3deg]
+  transition-all duration-700
+  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
+  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
+  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  z-20
+'
           >
             <img
               src={services[0].icon}
               alt={services[0].title}
-              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+              className='
+      w-28 h-28
+      md:w-32 md:h-32
+      lg:w-40 lg:h-40
+      object-contain
+      transition-transform duration-500
+      group-hover:scale-110
+    '
             />
-            <span className='text-sm md:text-base lg:text-lg font-bold  leading-tight line-clamp-2 px-2 drop-shadow-sm'>
-              {services[0].title}
-            </span>
-          </button>
-          <button
-            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
- relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
-          >
-            <img
-              src={services[1].icon}
-              alt={services[1].title}
-              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
-            />
-            <span className='text-sm md:text-base lg:text-lg font-bold  leading-tight line-clamp-2 px-2 drop-shadow-sm'>
-              {services[1].title}
-            </span>
-          </button>
-          <button
-            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
- relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
-          >
-            <img
-              src={services[2].icon}
-              alt={services[2].title}
-              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
-            />
-            <span className='text-sm md:text-base lg:text-lg font-bold  leading-tight line-clamp-2 px-2 drop-shadow-sm'>
-              {services[2].title}
-            </span>
-          </button>
-          <button
-            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
- relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
-          >
-            <img
-              src={services[3].icon}
-              alt={services[3].title}
-              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
-            />
-            <span className='text-sm md:text-base lg:text-lg font-bold leading-tight line-clamp-2 px-2 drop-shadow-sm'>
-              {services[3].title}
-            </span>
-          </button>
-          <button
-            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
- relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
-          >
-            <img
-              src={services[4].icon}
-              alt={services[4].title}
-              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
-            />
-            <span className='text-sm md:text-base lg:text-lg font-bold  leading-tight line-clamp-2 px-2 drop-shadow-sm'>
-              {services[4].title}
-            </span>
-          </button>
-          <button
-            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
- relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
-          >
-            <img
-              src={services[5].icon}
-              alt={services[5].title}
-              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
-            />
-            <span className='text-sm md:text-base lg:text-lg font-bold  leading-tight line-clamp-2 px-2 drop-shadow-sm'>
-              {services[5].title}
-            </span>
-          </button>
-          <button
-            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
- relative rotate-3 rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-10 before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
-          >
-            <img
-              src={services[6].icon}
-              alt={services[6].title}
-              className='w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
-            />
-            <span className='text-sm md:text-base lg:text-lg font-bold text-gray-900 leading-tight line-clamp-2 px-3 drop-shadow-sm'>
-              {services[6].title}
-            </span>
           </button>
 
           <button
-            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
- relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+            className='
+  col-span-6 md:col-span-4 lg:col-span-3
+  relative
+  rotate-[3deg]
+  transition-all duration-700
+  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
+  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
+  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  z-20
+'
           >
             <img
-              src={services[7].icon}
-              alt={services[7].title}
-              className='w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+              src={services[1].icon}
+              alt={services[0].title}
+              className='
+      w-28 h-28
+      md:w-32 md:h-32
+      lg:w-40 lg:h-40
+      object-contain
+      transition-transform duration-500
+      group-hover:scale-110
+    '
             />
-            <span className='text-sm md:text-base lg:text-lg font-bold text-gray-900 leading-tight line-clamp-2 px-3 drop-shadow-sm'>
-              {services[7].title}
-            </span>
           </button>
+
           <button
-            className='col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-4
- relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'
+            className='
+  col-span-6 md:col-span-4 lg:col-span-3
+  relative
+  rotate-[3deg]
+  transition-all duration-700
+  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
+  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
+  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  z-20
+'
+          >
+            <img
+              src={services[2].icon}
+              alt={services[0].title}
+              className='
+      w-28 h-28
+      md:w-32 md:h-32
+      lg:w-40 lg:h-40
+      object-contain
+      transition-transform duration-500
+      group-hover:scale-110
+    '
+            />
+          </button>
+
+          <button
+            className='
+  col-span-6 md:col-span-4 lg:col-span-3
+  relative
+  rotate-[3deg]
+  transition-all duration-700
+  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
+  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
+  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  z-20
+'
+          >
+            <img
+              src={services[3].icon}
+              alt={services[0].title}
+              className='
+      w-28 h-28
+      md:w-32 md:h-32
+      lg:w-40 lg:h-40
+      object-contain
+      transition-transform duration-500
+      group-hover:scale-110
+    '
+            />
+          </button>
+
+          <button
+            className='
+  col-span-6 md:col-span-4 lg:col-span-3
+  relative
+  rotate-[3deg]
+  transition-all duration-700
+  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
+  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
+  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  z-20
+'
+          >
+            <img
+              src={services[4].icon}
+              alt={services[0].title}
+              className='
+      w-28 h-28
+      md:w-32 md:h-32
+      lg:w-40 lg:h-40
+      object-contain
+      transition-transform duration-500
+      group-hover:scale-110
+    '
+            />
+          </button>
+
+          <button
+            className='
+  col-span-6 md:col-span-4 lg:col-span-3
+  relative
+  rotate-[3deg]
+  transition-all duration-700
+  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
+  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
+  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  z-20
+'
           >
             <img
               src={services[5].icon}
-              alt={services[5].title}
-              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+              alt={services[0].title}
+              className='
+      w-28 h-28
+      md:w-32 md:h-32
+      lg:w-40 lg:h-40
+      object-contain
+      transition-transform duration-500
+      group-hover:scale-110
+    '
             />
-            <span className='text-sm md:text-base lg:text-lg font-bold leading-tight line-clamp-2 px-2 drop-shadow-sm'>
-              {services[5].title}
-            </span>
+          </button>
+
+          <button
+            className='
+  col-span-6 md:col-span-4 lg:col-span-3
+  relative
+  rotate-[3deg]
+  transition-all duration-700
+  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
+  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
+  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  z-20
+'
+          >
+            <img
+              src={services[6].icon}
+              alt={services[0].title}
+              className='
+      w-28 h-28
+      md:w-32 md:h-32
+      lg:w-40 lg:h-40
+      object-contain
+      transition-transform duration-500
+      group-hover:scale-110
+    '
+            />
+          </button>
+
+          <button
+            className='
+  col-span-6 md:col-span-4 lg:col-span-3
+  relative
+  rotate-[3deg]
+  transition-all duration-700
+  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
+  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
+  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  z-20
+'
+          >
+            <img
+              src={services[7].icon}
+              alt={services[0].title}
+              className='
+      w-28 h-28
+      md:w-32 md:h-32
+      lg:w-40 lg:h-40
+      object-contain
+      transition-transform duration-500
+      group-hover:scale-110
+    '
+            />
           </button>
         </div>
       </div>
