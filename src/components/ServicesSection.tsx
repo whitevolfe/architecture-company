@@ -6,6 +6,7 @@ import detailDrawingsIcon from '../assets/DETAIL DRAWINGS.png';
 import drawingOfficeIcon from '../assets/DRAWING OFFICE SERVICE AND PLANNING AGENT.png';
 import remodelingIcon from '../assets/REMODELING & ALTERNATION SERVICE.png';
 import constructionIcon from '../assets/BUILDING CONSTRUCTION.png';
+import serviceBgImage from '../assets/servicesection-bg.png';
 
 const services = [
   {
@@ -56,7 +57,16 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id='services' className='section-padding bg-secondary-bg'>
+    <section
+      id='services'
+      className='section-padding'
+      style={{
+        backgroundImage: `url(${serviceBgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className='container-custom'>
         {/* Section Header */}
         <div className='text-center max-w-3xl mx-auto mb-16'>
