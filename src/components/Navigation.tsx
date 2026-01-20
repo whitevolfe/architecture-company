@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logoImage from '@/assets/website-logo.jpeg';
 
 const navLinks = [
   { name: 'Services', href: '#services' },
@@ -35,10 +36,11 @@ const Navigation = () => {
         <div className='flex items-center justify-between h-20'>
           {/* Logo */}
           <a href='#' className='flex items-center gap-2'>
-            <div className='w-10 h-10 bg-primary-red rounded-lg flex items-center justify-center'></div>
-            <span className='font-display text-xl font-semibold text-foreground'>
-              My Plan Architectural Studio
-            </span>
+            <img
+              src={logoImage}
+              alt='My Plan Architectural Studio Logo'
+              className='h-10 w-auto'
+            />
           </a>
 
           {/* Desktop Navigation */}
