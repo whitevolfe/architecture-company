@@ -20,7 +20,7 @@ const HeroSection = () => {
         >
           <source src={heroVideo} type='video/mp4' />
         </video>
-        <div className='absolute inset-0 bg-primary-bg/80' />
+        <div className='absolute inset-0 bg-primary-bg/0' />
       </div>
 
       {/* Content */}

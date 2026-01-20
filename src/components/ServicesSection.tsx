@@ -6,12 +6,6 @@ import detailDrawingsIcon from '../assets/DETAIL DRAWINGS.png';
 import drawingOfficeIcon from '../assets/DRAWING OFFICE SERVICE AND PLANNING AGENT.png';
 import remodelingIcon from '../assets/REMODELING & ALTERNATION SERVICE.png';
 import constructionIcon from '../assets/BUILDING CONSTRUCTION.png';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from './ui/accordion';
 
 const services = [
   {
@@ -78,35 +72,99 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Services Accordion */}
-        <div className='max-w-4xl mx-auto'>
-          <Accordion type='single' collapsible className='space-y-4'>
-            {services.map((service, index) => (
-              <AccordionItem
-                key={service.title}
-                value={`item-${index}`}
-                className='bg-primary-bg rounded-2xl border border-secondary-accent/30 hover:border-secondary-accent transition-all duration-300'
-              >
-                <AccordionTrigger className='px-8 py-6 hover:no-underline'>
-                  <div className='flex items-center gap-4'>
-                    <img
-                      src={service.icon}
-                      alt={service.title}
-                      className='w-20 h-30 rounded-lg'
-                    />
-                    <h3 className='heading-sm text-text-light text-left'>
-                      {service.title}
-                    </h3>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className='px-8 pb-6'>
-                  <div className='text-text-muted whitespace-pre-line'>
-                    {service.description}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+        {/* Services Collage Buttons */}
+        <div className='grid grid-cols-12 gap-4 md:gap-6 lg:gap-8 [grid-auto-rows:minmax(180px,auto)]'>
+          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+            <img
+              src={services[0].icon}
+              alt={services[0].title}
+              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+            />
+            <span className='text-sm md:text-base lg:text-lg font-bold  leading-tight line-clamp-2 px-2 drop-shadow-sm'>
+              {services[0].title}
+            </span>
+          </button>
+          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+            <img
+              src={services[1].icon}
+              alt={services[1].title}
+              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+            />
+            <span className='text-sm md:text-base lg:text-lg font-bold  leading-tight line-clamp-2 px-2 drop-shadow-sm'>
+              {services[1].title}
+            </span>
+          </button>
+          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+            <img
+              src={services[2].icon}
+              alt={services[2].title}
+              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+            />
+            <span className='text-sm md:text-base lg:text-lg font-bold  leading-tight line-clamp-2 px-2 drop-shadow-sm'>
+              {services[2].title}
+            </span>
+          </button>
+          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+            <img
+              src={services[3].icon}
+              alt={services[3].title}
+              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+            />
+            <span className='text-sm md:text-base lg:text-lg font-bold leading-tight line-clamp-2 px-2 drop-shadow-sm'>
+              {services[3].title}
+            </span>
+          </button>
+          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+            <img
+              src={services[4].icon}
+              alt={services[4].title}
+              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+            />
+            <span className='text-sm md:text-base lg:text-lg font-bold  leading-tight line-clamp-2 px-2 drop-shadow-sm'>
+              {services[4].title}
+            </span>
+          </button>
+          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+            <img
+              src={services[5].icon}
+              alt={services[5].title}
+              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+            />
+            <span className='text-sm md:text-base lg:text-lg font-bold  leading-tight line-clamp-2 px-2 drop-shadow-sm'>
+              {services[5].title}
+            </span>
+          </button>
+          <button className='col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-3 row-span-1 md:row-span-2 relative rotate-3 rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-10 before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+            <img
+              src={services[6].icon}
+              alt={services[6].title}
+              className='w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+            />
+            <span className='text-sm md:text-base lg:text-lg font-bold text-gray-900 leading-tight line-clamp-2 px-3 drop-shadow-sm'>
+              {services[6].title}
+            </span>
+          </button>
+
+          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+            <img
+              src={services[7].icon}
+              alt={services[7].title}
+              className='w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+            />
+            <span className='text-sm md:text-base lg:text-lg font-bold text-gray-900 leading-tight line-clamp-2 px-3 drop-shadow-sm'>
+              {services[7].title}
+            </span>
+          </button>
+          <button className='col-span-6 md:col-span-8 lg:col-span-6 xl:col-span-4 row-span-2 relative rotate-[3deg] rounded-2xl bg-gradient-to-b from-white/95 to-white/80 hover:bg-white/100 border-2 border-white/40 hover:border-gray-100 shadow-2xl hover:shadow-3xl hover:scale-[1.03] transition-all duration-700 flex flex-col items-center justify-center p-6 md:p-8 lg:p-10 gap-4 text-center hover:-translate-y-4 hover:rotate-0 group backdrop-blur-xl z-20 md:z-20 lg:z-30 -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px] -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px] before:content-[""] before:absolute before:top-4 before:right-4 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:shadow-lg before:z-50 before:transition-all before:duration-500 group-hover:before:scale-[1.2] before:rotate-[20deg] before:translate-x-[2px] before:translate-y-[-3px]'>
+            <img
+              src={services[5].icon}
+              alt={services[5].title}
+              className='w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain rounded-2xl shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0'
+            />
+            <span className='text-sm md:text-base lg:text-lg font-bold leading-tight line-clamp-2 px-2 drop-shadow-sm'>
+              {services[5].title}
+            </span>
+          </button>
         </div>
       </div>
     </section>
