@@ -102,7 +102,8 @@ const ServicesSection = () => {
               className='
       w-28 h-28
       md:w-32 md:h-32
-      lg:w-40 lg:h-40
+      lg:w-60 lg:h-60
+      mt-10
       object-contain
       transition-transform duration-500
       group-hover:scale-110
@@ -128,7 +129,8 @@ const ServicesSection = () => {
               className='
       w-28 h-28
       md:w-32 md:h-32
-      lg:w-40 lg:h-40
+      lg:w-60 lg:h-60
+      mb-20
       object-contain
       transition-transform duration-500
       group-hover:scale-110
@@ -154,7 +156,8 @@ const ServicesSection = () => {
               className='
       w-28 h-28
       md:w-32 md:h-32
-      lg:w-40 lg:h-40
+      lg:w-60 lg:h-60
+      mt-10
       object-contain
       transition-transform duration-500
       group-hover:scale-110
@@ -180,7 +183,8 @@ const ServicesSection = () => {
               className='
       w-28 h-28
       md:w-32 md:h-32
-      lg:w-40 lg:h-40
+      lg:w-60 lg:h-60
+      mb-20
       object-contain
       transition-transform duration-500
       group-hover:scale-110
@@ -206,7 +210,7 @@ const ServicesSection = () => {
               className='
       w-28 h-28
       md:w-32 md:h-32
-      lg:w-40 lg:h-40
+      lg:w-60 lg:h-60
       object-contain
       transition-transform duration-500
       group-hover:scale-110
@@ -232,7 +236,7 @@ const ServicesSection = () => {
               className='
       w-28 h-28
       md:w-32 md:h-32
-      lg:w-40 lg:h-40
+      lg:w-60 lg:h-60
       object-contain
       transition-transform duration-500
       group-hover:scale-110
@@ -258,7 +262,7 @@ const ServicesSection = () => {
               className='
       w-28 h-28
       md:w-32 md:h-32
-      lg:w-40 lg:h-40
+      lg:w-60 lg:h-60
       object-contain
       transition-transform duration-500
       group-hover:scale-110
@@ -284,7 +288,7 @@ const ServicesSection = () => {
               className='
       w-28 h-28
       md:w-32 md:h-32
-      lg:w-40 lg:h-40
+      lg:w-60 lg:h-60
       object-contain
       transition-transform duration-500
       group-hover:scale-110
