@@ -125,13 +125,7 @@ const TestimonialsSection = () => {
 
         {/* Concept Images Grid */}
         <div className='grid md:grid-cols-3 gap-8'>
-          <div className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'>
-            <img
-              src={buildingConcept1}
-              alt='Building Concept 1'
-              className='w-full h-150 object-cover rounded-lg mb-4'
-            />
-          </div>
+          <div className='bg-card p-8 rounded-2xl transition-all duration-300'></div>
           <div className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'>
             <img
               src={buildingConcept2}
@@ -139,13 +133,7 @@ const TestimonialsSection = () => {
               className='w-full h-150 object-cover rounded-lg mb-4'
             />
           </div>
-          <div className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'>
-            <img
-              src={buildingConcept3}
-              alt='Building Concept 3'
-              className='w-full h-150 object-cover rounded-lg mb-4'
-            />
-          </div>
+          <div className='bg-card p-8 rounded-2xl transition-all duration-300'></div>
         </div>
       </div>
     </section>
