@@ -107,6 +107,7 @@ const ServicesSection = () => {
       object-contain
       transition-transform duration-500
       group-hover:scale-110
+      floating
     '
             />
           </button>
@@ -125,7 +126,7 @@ const ServicesSection = () => {
           >
             <img
               src={services[1].icon}
-              alt={services[0].title}
+              alt={services[1].title}
               className='
       w-28 h-28
       md:w-32 md:h-32
@@ -134,6 +135,7 @@ const ServicesSection = () => {
       object-contain
       transition-transform duration-500
       group-hover:scale-110
+      floating
     '
             />
           </button>
@@ -152,7 +154,7 @@ const ServicesSection = () => {
           >
             <img
               src={services[2].icon}
-              alt={services[0].title}
+              alt={services[2].title}
               className='
       w-28 h-28
       md:w-32 md:h-32
@@ -161,6 +163,7 @@ const ServicesSection = () => {
       object-contain
       transition-transform duration-500
       group-hover:scale-110
+      floating
     '
             />
           </button>
@@ -179,7 +182,7 @@ const ServicesSection = () => {
           >
             <img
               src={services[3].icon}
-              alt={services[0].title}
+              alt={services[3].title}
               className='
       w-28 h-28
       md:w-32 md:h-32
@@ -188,6 +191,7 @@ const ServicesSection = () => {
       object-contain
       transition-transform duration-500
       group-hover:scale-110
+      floating
     '
             />
           </button>
@@ -206,7 +210,7 @@ const ServicesSection = () => {
           >
             <img
               src={services[4].icon}
-              alt={services[0].title}
+              alt={services[4].title}
               className='
       w-28 h-28
       md:w-32 md:h-32
@@ -214,6 +218,7 @@ const ServicesSection = () => {
       object-contain
       transition-transform duration-500
       group-hover:scale-110
+      floating
     '
             />
           </button>
@@ -232,7 +237,7 @@ const ServicesSection = () => {
           >
             <img
               src={services[5].icon}
-              alt={services[0].title}
+              alt={services[5].title}
               className='
       w-28 h-28
       md:w-32 md:h-32
@@ -240,6 +245,7 @@ const ServicesSection = () => {
       object-contain
       transition-transform duration-500
       group-hover:scale-110
+      floating
     '
             />
           </button>
@@ -258,7 +264,7 @@ const ServicesSection = () => {
           >
             <img
               src={services[6].icon}
-              alt={services[0].title}
+              alt={services[6].title}
               className='
       w-28 h-28
       md:w-32 md:h-32
@@ -266,6 +272,7 @@ const ServicesSection = () => {
       object-contain
       transition-transform duration-500
       group-hover:scale-110
+      floating
     '
             />
           </button>
@@ -284,7 +291,7 @@ const ServicesSection = () => {
           >
             <img
               src={services[7].icon}
-              alt={services[0].title}
+              alt={services[7].title}
               className='
       w-28 h-28
       md:w-32 md:h-32
@@ -292,6 +299,7 @@ const ServicesSection = () => {
       object-contain
       transition-transform duration-500
       group-hover:scale-110
+      floating
     '
             />
           </button>
