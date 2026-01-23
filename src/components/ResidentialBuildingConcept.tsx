@@ -18,7 +18,7 @@ const ResidentialBuildingConcept = () => {
         <img
           src={residentConceptBuildingImg}
           alt='Residential Building Concept'
-          className='w-64 h-64 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] object-contain opacity-90'
+          className='w-64 h-64 md:w-80 md:h-80 lg:w-[40rem] lg:h-[40rem] object-contain opacity-90'
         />
       </div>
 
@@ -55,7 +55,7 @@ const ResidentialBuildingConcept = () => {
           </div>
 
           {/* English Text Block */}
-          <div className='backdrop-blur-sm rounded-lg p-6'>
+          <div className='rounded-lg p-6'>
             <p className='text-red-800 leading-relaxed text-lg md:text-xl'>
               For a peaceful and independent life, owning a home of your own is
               truly important. You may already have a vision for your dream
