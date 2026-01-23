@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import buildingConcept1 from '@/assets/building-concept1.png';
-import buildingConcept2 from '@/assets/building-concept2.png';
+import buildingConcept2 from '@/assets/building-conceptnew.jpeg';
 import buildingConcept3 from '@/assets/building-concept3.png';
 
 const testimonials = [
@@ -124,17 +124,6 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Concept Images Grid */}
-        <div className='grid md:grid-cols-3 gap-8'>
-          <div className='bg-card p-8 rounded-2xl transition-all duration-300'></div>
-          <div className='bg-card p-8 rounded-2xl border border-border hover:border-accent/30 hover:shadow-elegant-lg transition-all duration-300'>
-            <img
-              src={buildingConcept2}
-              alt='Building Concept 2'
-              className='w-full h-150 object-cover rounded-lg mb-4'
-            />
-          </div>
-          <div className='bg-card p-8 rounded-2xl transition-all duration-300'></div>
-        </div>
       </div>
     </section>
   );

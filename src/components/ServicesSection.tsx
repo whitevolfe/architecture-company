@@ -83,224 +83,191 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Collage Buttons */}
-        <div className='grid grid-cols-12 gap-4 md:gap-6 lg:gap-8 [grid-auto-rows:minmax(180px,auto)]'>
+        <div className='grid grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-2 lg:[grid-template-rows:repeat(6,120px)]'>
+          {/* TOP ROW */}
+          {/* 1. Big square (left) - col-span-4 row-span-2 */}
           <button
             className='
-  col-span-6 md:col-span-4 lg:col-span-3
+  col-span-1
+  lg:col-span-4 lg:row-span-2
   relative
   rotate-[3deg]
   transition-all duration-700
   hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
-  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  -translate-x-[1px] lg:-translate-x-[6px]
+  -translate-y-[1px] lg:-translate-y-[3px]
   z-20
+  group
+  flex justify-center items-center
 '
           >
             <img
               src={services[0].icon}
               alt={services[0].title}
-              className='
-      w-28 h-28
-      md:w-32 md:h-32
-      lg:w-60 lg:h-60
-      mt-10
-      object-contain
-      transition-transform duration-500
-      group-hover:scale-110
-      floating
-    '
+              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
+          {/* 2. Small rectangle (top-center) - col-span-4 row-span-1 */}
           <button
             className='
-  col-span-6 md:col-span-4 lg:col-span-3
+  col-span-1
+  lg:col-span-4 lg:row-span-1 lg:col-start-5
   relative
   rotate-[3deg]
   transition-all duration-700
   hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
-  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  -translate-x-[1px] lg:-translate-x-[6px]
+  -translate-y-[1px] lg:-translate-y-[3px]
   z-20
+  group
+  flex justify-center items-center
 '
           >
             <img
               src={services[1].icon}
               alt={services[1].title}
-              className='
-      w-28 h-28
-      md:w-32 md:h-32
-      lg:w-60 lg:h-60
-      mb-20
-      object-contain
-      transition-transform duration-500
-      group-hover:scale-110
-      floating
-    '
+              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
+          {/* 3. Big rectangle (right) - col-span-4 row-span-2 */}
           <button
             className='
-  col-span-6 md:col-span-4 lg:col-span-3
+  col-span-1
+  lg:col-span-4 lg:row-span-2 lg:col-start-9
   relative
   rotate-[3deg]
   transition-all duration-700
   hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
-  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  -translate-x-[1px] lg:-translate-x-[6px]
+  -translate-y-[1px] lg:-translate-y-[3px]
   z-20
+  group
+  flex justify-center items-center
 '
           >
             <img
               src={services[2].icon}
               alt={services[2].title}
-              className='
-      w-28 h-28
-      md:w-32 md:h-32
-      lg:w-60 lg:h-60
-      mt-10
-      object-contain
-      transition-transform duration-500
-      group-hover:scale-110
-      floating
-    '
+              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
+          {/* MIDDLE ROW */}
+          {/* 4. Tall rectangle (left) - col-span-3 row-span-3 */}
           <button
             className='
-  col-span-6 md:col-span-4 lg:col-span-3
+  col-span-1
+  lg:col-span-3 lg:row-span-3 lg:col-start-1 lg:row-start-3
   relative
   rotate-[3deg]
   transition-all duration-700
   hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
-  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  -translate-x-[1px] lg:-translate-x-[6px]
+  -translate-y-[1px] lg:-translate-y-[3px]
   z-20
+  group
+  flex justify-center items-center
 '
           >
             <img
               src={services[3].icon}
               alt={services[3].title}
-              className='
-      w-28 h-28
-      md:w-32 md:h-32
-      lg:w-60 lg:h-60
-      mb-20
-      object-contain
-      transition-transform duration-500
-      group-hover:scale-110
-      floating
-    '
+              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
+          {/* 5. Long rectangle (center) - col-span-6 row-span-2 */}
           <button
             className='
-  col-span-6 md:col-span-4 lg:col-span-3
+  col-span-1
+  lg:col-span-6 lg:row-span-2 lg:col-start-4 lg:row-start-3
   relative
   rotate-[3deg]
   transition-all duration-700
   hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
-  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  -translate-x-[1px] lg:-translate-x-[6px]
+  -translate-y-[1px] lg:-translate-y-[3px]
   z-20
+  group
+  flex justify-center items-center
 '
           >
             <img
               src={services[4].icon}
               alt={services[4].title}
-              className='
-      w-28 h-28
-      md:w-32 md:h-32
-      lg:w-60 lg:h-60
-      object-contain
-      transition-transform duration-500
-      group-hover:scale-110
-      floating
-    '
+              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
+          {/* 6. Tall rectangle (right) - col-span-3 row-span-3 */}
           <button
             className='
-  col-span-6 md:col-span-4 lg:col-span-3
+  col-span-1
+  lg:col-span-3 lg:row-span-3 lg:col-start-10 lg:row-start-3
   relative
   rotate-[3deg]
   transition-all duration-700
   hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
-  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  -translate-x-[1px] lg:-translate-x-[6px]
+  -translate-y-[1px] lg:-translate-y-[3px]
   z-20
+  group
+  flex justify-center items-center
 '
           >
             <img
               src={services[5].icon}
               alt={services[5].title}
-              className='
-      w-28 h-28
-      md:w-32 md:h-32
-      lg:w-60 lg:h-60
-      object-contain
-      transition-transform duration-500
-      group-hover:scale-110
-      floating
-    '
+              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
+          {/* BOTTOM ROW */}
+          {/* 7. Small square - col-span-3 row-span-1 */}
           <button
             className='
-  col-span-6 md:col-span-4 lg:col-span-3
+  col-span-1
+  lg:col-span-3 lg:row-span-1 lg:col-start-4 lg:row-start-6
   relative
   rotate-[3deg]
   transition-all duration-700
   hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
-  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  -translate-x-[1px] lg:-translate-x-[6px]
+  -translate-y-[1px] lg:-translate-y-[3px]
   z-20
+  group
+  flex justify-center items-center
 '
           >
             <img
               src={services[6].icon}
               alt={services[6].title}
-              className='
-      w-28 h-28
-      md:w-32 md:h-32
-      lg:w-60 lg:h-60
-      object-contain
-      transition-transform duration-500
-      group-hover:scale-110
-      floating
-    '
+              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
+          {/* 8. Small square - col-span-3 row-span-1 */}
           <button
             className='
-  col-span-6 md:col-span-4 lg:col-span-3
+  col-span-1
+  lg:col-span-3 lg:row-span-1 lg:col-start-7 lg:row-start-6
   relative
   rotate-[3deg]
   transition-all duration-700
   hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] md:-translate-x-[3px] lg:-translate-x-[6px]
-  -translate-y-[1px] md:-translate-y-[2px] lg:-translate-y-[3px]
+  -translate-x-[1px] lg:-translate-x-[6px]
+  -translate-y-[1px] lg:-translate-y-[3px]
   z-20
+  group
+  flex justify-center items-center
 '
           >
             <img
               src={services[7].icon}
               alt={services[7].title}
-              className='
-      w-28 h-28
-      md:w-32 md:h-32
-      lg:w-60 lg:h-60
-      object-contain
-      transition-transform duration-500
-      group-hover:scale-110
-      floating
-    '
+              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
         </div>
