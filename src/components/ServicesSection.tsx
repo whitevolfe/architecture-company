@@ -73,10 +73,10 @@ const ServicesSection = () => {
           <span className='inline-block text-sm font-medium text-supporting-green uppercase tracking-wider mb-4'>
             Our Services
           </span>
-          <h2 className='heading-lg text-text-light mb-4'>
+          <h2 className='heading-lg text-foreground mb-4'>
             Comprehensive Architecture & Design Solutions
           </h2>
-          <p className='body-base text-text-muted'>
+          <p className='body-base text-foreground'>
             From initial concept to final delivery, we provide end-to-end
             architectural services tailored to the Sri Lankan context.
           </p>
