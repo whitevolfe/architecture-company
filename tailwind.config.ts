@@ -58,6 +58,7 @@ export default {
         },
         // Brand Color System - Exclusive Palette
         'primary-bg': 'hsl(var(--primary-bg))', // #192123 - Primary background (dark charcoal)
+        charcoal: 'hsl(var(--primary-bg))', // Alias for primary-bg
         'secondary-bg': 'hsl(var(--secondary-bg))', // #2A3F36 - Secondary background / sections
         'primary-accent': 'hsl(var(--primary-accent))', // #CE1D2F - Primary accent (buttons, CTAs, highlights)
         'secondary-accent': 'hsl(var(--secondary-accent))', // #7E1418 - Secondary accent (hover states, borders)

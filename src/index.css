@@ -4,33 +4,35 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 20% 10%;
+    --background: var(
+      --primary-bg
+    ); /* Using primary-bg #192123 for main background */
+    --foreground: var(--text-light);
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 20% 10%;
+    --card: var(--secondary-bg);
+    --card-foreground: var(--text-light);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover: var(--secondary-bg);
+    --popover-foreground: var(--text-light);
 
-    --primary: 160 30% 20%;
-    --primary-foreground: 45 40% 95%;
+    --primary: var(--primary-accent);
+    --primary-foreground: var(--text-light);
 
-    --secondary: 40 5% 96%;
-    --secondary-foreground: 220 20% 10%;
+    --secondary: var(--supporting-green);
+    --secondary-foreground: var(--text-light);
 
-    --muted: 40 5% 96%;
-    --muted-foreground: 220 10% 45%;
+    --muted: var(--supporting-green);
+    --muted-foreground: var(--text-muted);
 
-    --accent: 42 60% 50%;
-    --accent-foreground: 220 20% 10%;
+    --accent: var(--primary-accent);
+    --accent-foreground: var(--text-light);
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: var(--secondary-accent);
+    --destructive-foreground: var(--text-light);
 
-    --border: 40 10% 90%;
-    --input: 40 10% 90%;
-    --ring: 160 30% 20%;
+    --border: var(--supporting-green);
+    --input: var(--secondary-bg);
+    --ring: var(--primary-accent);
 
     --radius: 0.5rem;
 

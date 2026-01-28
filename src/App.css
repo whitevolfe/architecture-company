@@ -45,7 +45,7 @@
   position: fixed; /* Fixed position */
   bottom: 20px; /* Distance from the bottom */
   right: 20px; /* Distance from the right */
-  background-color: white; /* Background color */
+  background-color: #7e9f84; /* Background color using supporting green from palette */
   border-radius: 50%; /* Circular shape */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
   padding: 10px; /* Padding around the icon */
