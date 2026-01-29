@@ -76,14 +76,14 @@ const ServicesSection = () => {
           <h2 className='heading-lg text-supporting-green mb-4'>
             Comprehensive Architecture & Design Solutions
           </h2>
-          <p className='body-base text-supporting-green'>
+          <p className='body-base text-foreground'>
             From initial concept to final delivery, we provide end-to-end
             architectural services tailored to the Sri Lankan context.
           </p>
         </div>
 
         {/* Services Collage Buttons */}
-        <div className='grid grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-2 lg:[grid-template-rows:repeat(6,120px)]'>
+        <div className='grid grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-1 lg:[grid-template-rows:repeat(6,120px)]'>
           {/* TOP ROW */}
           {/* 1. Big square (left) - col-span-4 row-span-2 */}
           <button
@@ -104,7 +104,7 @@ const ServicesSection = () => {
             <img
               src={services[0].icon}
               alt={services[0].title}
-              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
@@ -112,7 +112,7 @@ const ServicesSection = () => {
           <button
             className='
   col-span-1
-  lg:col-span-4 lg:row-span-1 lg:col-start-5
+  lg:col-span-3 lg:row-span-2 lg:col-start-5
   relative
   rotate-[3deg]
   transition-all duration-700
@@ -127,7 +127,7 @@ const ServicesSection = () => {
             <img
               src={services[1].icon}
               alt={services[1].title}
-              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
@@ -150,7 +150,7 @@ const ServicesSection = () => {
             <img
               src={services[2].icon}
               alt={services[2].title}
-              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
@@ -174,7 +174,7 @@ const ServicesSection = () => {
             <img
               src={services[3].icon}
               alt={services[3].title}
-              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
@@ -197,7 +197,7 @@ const ServicesSection = () => {
             <img
               src={services[4].icon}
               alt={services[4].title}
-              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
@@ -220,7 +220,7 @@ const ServicesSection = () => {
             <img
               src={services[5].icon}
               alt={services[5].title}
-              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
@@ -229,7 +229,7 @@ const ServicesSection = () => {
           <button
             className='
   col-span-1
-  lg:col-span-3 lg:row-span-1 lg:col-start-4 lg:row-start-6
+  lg:col-span-3 lg:row-span-2 lg:col-start-4 lg:row-start-6
   relative
   rotate-[3deg]
   transition-all duration-700
@@ -244,7 +244,7 @@ const ServicesSection = () => {
             <img
               src={services[6].icon}
               alt={services[6].title}
-              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
 
@@ -252,7 +252,7 @@ const ServicesSection = () => {
           <button
             className='
   col-span-1
-  lg:col-span-3 lg:row-span-1 lg:col-start-7 lg:row-start-6
+  lg:col-span-3 lg:row-span-2 lg:col-start-7 lg:row-start-6
   relative
   rotate-[3deg]
   transition-all duration-700
@@ -267,7 +267,7 @@ const ServicesSection = () => {
             <img
               src={services[7].icon}
               alt={services[7].title}
-              className='w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
             />
           </button>
         </div>

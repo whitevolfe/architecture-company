@@ -113,7 +113,7 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Residential Building Concept */}
-        <div className='text-center max-w-3xl mx-auto mb-16 mt-16'>
+        {/* <div className='text-center max-w-3xl mx-auto mb-16 mt-16'>
           <h2 className='heading-lg text-foreground mb-4'>
             Residential Building Concept
           </h2>
@@ -121,7 +121,7 @@ const TestimonialsSection = () => {
             Explore our innovative residential building concepts designed to
             inspire modern living.
           </p>
-        </div>
+        </div> */}
 
         {/* Concept Images Grid */}
       </div>
