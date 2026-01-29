@@ -30,7 +30,7 @@ const App = () => (
         }}
       >
         <a
-          href='https://wa.me/+94779556605'
+          href='https://wa.me/+94772709909'
           target='_blank'
           rel='noopener noreferrer'
           id='getbutton-whatsapp'
