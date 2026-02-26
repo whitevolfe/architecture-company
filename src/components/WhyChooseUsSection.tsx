@@ -35,7 +35,7 @@ const visionMissionData = [
 
 const WhyChooseUsSection = () => {
   return (
-    <section id='about' className='section-padding bg-secondary-bg'>
+    <section id='why-us' className='section-padding bg-secondary-bg'>
       <div className='container-custom'>
         {/* Section Header */}
         <div className='text-center max-w-3xl mx-auto mb-16'>

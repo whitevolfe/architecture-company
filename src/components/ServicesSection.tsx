@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import buildingDesignIcon from '../assets/BUILDING DESIGNING SERVICE (HOUSE PLANNING).png';
 import modelingIcon from '../assets/3D MODELLING.png';
 import interiorExteriorIcon from '../assets/INTERIOR AND EXTERIOR DESIGNING.png';
@@ -12,50 +13,56 @@ const services = [
   {
     icon: buildingDesignIcon,
     title: 'BUILDING DESIGNING SERVICE',
-    description: `A. House Planning (photos)\nB. Commercial Buildings (photos)\n  a) Apartments\n  b) Hostels\n  c) Hotels\n  d) Villas\n  e) Cabanas\n  f) Hospitals\n  g) Shopping Complex\n  h) Factory / Industrial\n  i) Cinema\n  j) Stadium\nC. Mix Residences`,
+    description: `A. Residencial Buildings - "යකාගේ හැටියට විමානෙ"\n\nB. Commercial Buildings\n  a) Apartments\n  b) Hostels\n  c) Hotels\n  d) Villas\n  e) Cabanas\n  f) Hospitals\n  g) Shopping Complex\n  h) Factory / Industrial\n  i) Cinema\n  j) Stadium\n\nC. Mix Residences`,
   },
   {
     icon: modelingIcon,
-    title: '3D MODELLING (video)',
-    description: `English: From the beginning of your construction, we recreate your land using computer aids and show you step by step how your building will be placed through 3D designs. We provide separate 3D designs for all floors and arrange all designs so you can see the entire building appearance. We provide photos/videos with before and after views of the building as per your requirements (for viewing by those living abroad).\n\nTamil: உங்கள் கட்டுமானத்தின் தொடக்கத்திலிருந்து, நாங்கள் கணினி உதவிகளைப் பயன்படுத்தி உங்கள் தரையை மறுஉருவாக்கி, 3D வடிவமைப்புகளின் மூலம் உங்கள் கட்டிடம் எவ்வாறு வைக்கப்படும் என்பதை படிப்படியாக உங்களுக்குக் காட்சி அளிக்கிறோம். அனைத்து தரைகளுக்கும் தனித்தனியாக 3D வடிவமைப்புகளை வழங்குகிறோம் மற்றும் அனைத்து வடிவமைப்புகளையும் ஏற்பாடு செய்கிறோம், எனவே நீங்கள் முழு கட்டிடத்தின் தோற்றத்தையும் காணலாம். உங்கள் தேவைகளுக்கு ஏற்ப கட்டிடத்தின் முன் மற்றும் பின் காட்சிகளுடன் புகைப்படங்கள்/வீடியோக்களை வழங்குகிறோம் (வெளிநாட்டில் வசிப்பவர்களுக்கு பார்வைக்கு).`,
+    title: '3D MODELLING',
+    description: `ඔබේ නිර්මාණය ආරම්භයේ සිටම පිහිටි ඉඩම පරිගණක ආධාරයෙන් ප්‍රතිනිර්මාණය කර, ඒ තුළ ඔබේ ගොඩනැගිල්ල පිහිටවන ආකාරය ත්‍රිමාන සැලසුම් මගින් පියවරෙන් පියවර ඔබ දැනුවත් කිරීමේ සේවය.\nසියලුම මහල් සඳහා වෙන වෙනම ත්‍රිමාන සැලසුම් ලබා දෙන අතර සියලුම සැලසුම් එක්කර මුළු ගොඩනැගිල්ලේ පෙනුම ඔබට දැක ගැනීමට සැලැස්වීම.\nඅවශ්‍යතාවය පරිදි ගොඩනැගිල්ල සෑදීමට පෙර පසු පෙනුම සහිත ඡායාරූප / වීඩියෝ දර්ශන (පිටරට වෙසෙන අයට නැරඹීම සඳහා) ලබා දීමේ සේවය.`,
   },
   {
     icon: interiorExteriorIcon,
-    title: 'INTERIOR AND EXTERIOR DESIGNING (photos)',
-    description: `English: We provide the overall appearance of your buildings including the exterior appearance, exterior surfaces and facade, walls, windows, doors and landscaping in a way that suits you at a very high level.\n\nInterior means the systems that serve rooms and areas, namely plumbing and electrical installations and power supply methods, as well as aesthetic elements in those spaces, wall color matching and suitable furniture introduction.\n\nTamil: உங்கள் கட்டிடங்களின் மொத்த தோற்றத்தை, வெளிப்புற தோற்றம், வெளிப்புற மேற்பரப்புகள் மற்றும் முகப்பு, சுவர்கள், ஜன்னல்கள், கதவுகள் மற்றும் நிலப்பரப்பு அலங்காரம் ஆகியவற்றை உள்ளடக்கியது, உங்களுக்கு ஏற்ற வகையில் மிக உயர்ந்த அளவில் வழங்குகிறோம்.\n\nஉள்துறை என்பது அறைகள் மற்றும் பகுதிகளுக்கு சேவை செய்யும் அமைப்புகளைக் குறிக்கிறது, அதாவது குழாய் மற்றும் மின்சார நிறுவல்கள் மற்றும் சக்தி வழங்கல் முறைகள், மற்றும் அந்த இடங்களில் உள்ள ஸ்டெத்திக் கூறுகள், சுவர் வண்ண பொருத்தம் மற்றும் பொருத்தமான உள்நாட்டு பொருட்கள் அறிமுகம்.`,
+    title: 'INTERIOR AND EXTERIOR DESIGNING',
+    description: `ඔබේ ගොඩනැගිල්ලේ   බාහිර පෙනුම (Exterior) නොහොත් බාහිර පෘෂ්ඨයන් සහ මුහුණත, වහලය, බිත්ති, ජනෙල්, දොරවල් සහ භූමි අලංකරණය ඇතුළුව සමස්ත පෙනුම ඔබට ගැළපෙන ආකාරයෙන් ඉතා ඉහල මට්ටමින් ලබා දීමේ සේවය.\nඅභ්‍යන්තරය (Interior) යන්නෙන් අදහස් කරන්නේ කාමර, කොටස් සහ ඒවාට සේවය කරන පද්ධති එනම් ජලනල හා විදුලි ආලෝකය හා ආලෝකය සපයන ආකාරය වැනි අභ්‍යන්තර අවකාශයන් මෙන්ම එම අවකාශයන් තුළ ඇති සෞන්දර්යාත්මක අංග,බිත්ති වල සමබර වර්ණ ගැලපීම සහ ගැළපෙන ගෘහ භාණ්ඩ හඳුන්වා දීමේ සේවය.`,
   },
   {
     icon: boqIcon,
     title: 'BOQ (ප්‍රමාණ පත්‍රය / Quantity Sheet / Estimation)',
-    description: `English: We provide complete estimates with all necessary details for obtaining loans for all your requirements.\n\nTamil: உங்கள் எல்லா தேவைகளுக்கும் கடன்களைப் பெறுவதற்கான தேவையான எல்லா விவரங்களுடனும் முழுமையான மதிப்பீடுகளை வழங்குகிறோம்.`,
+    description: `Costing /Material List / ලී තුන්ඩුව / බඩු  ලයිස්තුව)\nඔබගේ සියලුම අවශ්‍යතා පරිදි ණය ලබා ගැනීමේ ක්‍රමවේදයන් සදහා පූර්ණ අනුමැතියන් සහිත ඇස්තමේන්තු ලබාදීම.`,
   },
   {
     icon: detailDrawingsIcon,
-    title: 'DETAIL DRAWINGS',
-    description: `A. Structure detail drawings - Structural details.\n  We provide detailed drawings for the structural details of your buildings, including concepts, beams, columns, slabs, etc., created and certified by relevant professionals.\n  Furthermore, we provide services to employ qualified officials to inspect whether the work is being carried out according to those notes during the construction of the building.\n\nB. ELECTRICAL DETAIL DRAWING - Electrical circuit details.\n  For guiding electrical installation and maintenance, we design the electrical system technically using lines, symbols and dimensions to represent the design visually.\n  In Sinhala, this is described as a diagram that shows how an electrical system like wiring for a house is set up.\n  Similarly, providing power in a way that suits the spaces of the house or building is also important for you to recognize.\n  Likewise, this circuit detail serves as a plan for electricians and a guide for future work.\n\nC. PLUMBING\n  01. INLET - Water pipe system.\n  02. WASTE WATER - Removing dirty water.\n  03. SEWAGE - Dirty water coming out of toilets.\n  04. STORM WATER MANAGEMENT - Rainwater management.\n\nD. OPENINGS\n  Doors, Windows, Arches, etc., openable spaces.\n\nE. ROOFING - Roof\n  Awareness about Roof Structure and Material.\n\nF. FINISHING - Building completion.\n  Awareness about Floor, Walls, Ceiling, Skirting, etc.\n\nG. LANDSCAPING\n  Detailed awareness about land decoration and providing that service.`,
+    title: 'DETAILING (වඩාත් පැහැදිලි රූප සටහන් මගින් නිශ්චිත තොරතුරු ලබාදීම)',
+    description: `A. Structure detail drawings - ව්‍යුහමය තොරතුරු දැක්වීම.\n\nඔබේ ගොඩනැගිල්ලේ ව්‍යුහාත්මක තොරතුරු සඳහා අදාළා concept වැර ගැන්වුම් කම්බි, අත්තිවාරම් (Base, Beams, collems, slabs) ආදියේ විශේෂ තොරතුරු ඇඳ අදාළ වෘත්තිකයන් ලවා සහතික කර ලබාදීම.\nතවද, ගොඩනැගිල්ල සාදන අවස්ථාවේදී එම සටහන්වලට අනුව කටයුතු පවතින්නේ ද යන්න සොයා බැලීම සඳහා සුදුසුකම් ලත් නිලධාරීන් යෙදවීමේ සේවයද ඔබට ලබාගත හැක.\n\nB. ELECTRICAL DETAIL DRAWING - විදුලි පරිපථ තොරතුරු.\n\nවිදුලි ස්ථාපනය හා නඩත්තුව සඳහා මඟ පෙන්වීම උදෙසා රේඛා, සංකේත සහ මානයන් භාවිතා කරමින් විදුලි පද්ධතියක සැලසුම දෘශ්‍යමය වශයෙන් නිරූපණය කරන තාක්ෂණික චිත්‍ර සඳහා ඔබ යොමු කිරීම.\nසිංහලෙන්, මෙය නිවසක් සඳහා රැහැන් ඇදීම වැනි විදුලි පද්ධතියක් සකස් කර ඇති ආකාරය පෙන්වන රූප සටහනක් හෝ සැලැස්මක් ලෙස විස්තර කෙරේ. එමෙන්ම නිවස හෝ ගොඩනැගිල්ලේ අවකාශයන්ට ගැළපෙන ආකාරයට ආලෝකය ලබා දීමේ වැදගත් කමද ඔබට හඳුනා ගතහැක. \nඑමෙන්ම එය විදුලි කාර්මිකයන් සඳහා සැලැස්මක් සහ අනාගත වැඩ සඳහා යොමුවක් ලෙස ද මෙම  පරිපථ තොරතුරු සේවය උපකාරී වනු ඇත.\n\nC. PLUMBING \n\n01. INLET - ජල නල පද්ධතිය.\n\n02. WASTE WATER - අපවිත්‍ර ජල බැහැර කිරීම.\n\n03. SEWAGE - වැසිකිළි වලින් පිටවන අපජලය\n\n04. STOME WATER MANAGEMENT - වැසි ජලය කළමනාකරණය\n\nD. OPENINGS\nDoors (දොර), Windows (ජනේල), Archs (ආරුක්කු) යනාදී විවෘත කල හැකි අවකාශ.\n\nE. ROOFING - වහල\nවහලේ Structure (ව්‍යුහය) හා Material (අමුද්‍රව්‍ය) පිළිබඳ දැනුවත් කිරීම.\n\nF. FINISHING - ගොඩනැගිල්ලේ නිමාව.\nFloor (පොලව), Walls (බිත්ති), Cealing (සිවිලිම), Skerting (නිමි පෙනුමක් ලබා දීම) වැනි දෑ පිළිබඳ දැනුවත් කිරීම.\n\nG. LANDSCAPING \nගෙවතු අලංකරණය පිළිබඳ සවිස්තරාත්මක දැනුවත් කිරීම හා එම සේවාව සැපයීම.`,
   },
   {
     icon: drawingOfficeIcon,
     title:
       'DRAWING OFFICE SERVICE AND PLANNING AGENT - (සැලසුම් ඇඳීම් නියෝජිත හා කාර්යාල සේවාව)',
     description:
-      'Drawing office services and planning agent services for architectural planning and office needs.',
+      'සැලසුම් ඇඳීම් සේවාවන් සහ සැලසුම් නියෝජිත සේවාවන් වාස්තු විද්‍යාත්මක සැලසුම් සහ කාර්යාල අවශ්‍යතා සඳහා.',
   },
   {
     icon: remodelingIcon,
     title:
       'REMODELING & ALTERNATION SERVICE (පැරණි ගොඩනැගිල්ලට නව පෙනුමක්...)',
     description:
-      'Remodeling and alteration services to give a new look to old buildings.',
+      'පැරණි ගොඩනැගිල්ලන්ට නව පෙනුමක් ලබා දීම සඳහා ප්‍රතිසංස්කරණ සහ වෙනස් කිරීමේ සේවාවන්.',
   },
   {
     icon: constructionIcon,
     title: 'BUILDING CONSTRUCTION - (ගොඩනැගිලි ඉදිකිරීම්)',
-    description: 'Building construction services.',
+    description: 'ගොඩනැගිලි ඉදිකිරීමේ සේවාවන්.',
   },
 ];
 
 const ServicesSection = () => {
+  const [expandedService, setExpandedService] = useState(null);
+
+  const toggleService = (index) => {
+    setExpandedService(expandedService === index ? null : index);
+  };
+
   return (
     <section
       id='services'
@@ -69,7 +76,7 @@ const ServicesSection = () => {
     >
       <div className='container-custom'>
         {/* Section Header */}
-        <div className='text-center max-w-3xl mx-auto mb-96'>
+        <div className='text-center max-w-3xl mx-auto mb-56'>
           <span className='inline-block text-sm font-medium text-supporting-green uppercase tracking-wider mb-4'>
             Our Services
           </span>
@@ -83,70 +90,31 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-60 mb-70'>
-          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
-            <img
-              src={services[0].icon}
-              alt={services[0].title}
-              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
-            />
-          </button>
-
-          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
-            <img
-              src={services[1].icon}
-              alt={services[1].title}
-              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
-            />
-          </button>
-
-          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
-            <img
-              src={services[2].icon}
-              alt={services[2].title}
-              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
-            />
-          </button>
-
-          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
-            <img
-              src={services[3].icon}
-              alt={services[3].title}
-              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
-            />
-          </button>
-
-          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
-            <img
-              src={services[4].icon}
-              alt={services[4].title}
-              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
-            />
-          </button>
-
-          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
-            <img
-              src={services[5].icon}
-              alt={services[5].title}
-              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
-            />
-          </button>
-
-          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
-            <img
-              src={services[6].icon}
-              alt={services[6].title}
-              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
-            />
-          </button>
-
-          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
-            <img
-              src={services[7].icon}
-              alt={services[7].title}
-              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
-            />
-          </button>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
+          {services.map((service, index) => (
+            <div key={index} className='flex flex-col items-center'>
+              <button
+                onClick={() => toggleService(index)}
+                className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center mb-4'
+              >
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
+                />
+              </button>
+              {expandedService === index && (
+                <div className='text-center max-w-xs'>
+                  <h3 className='text-lg font-semibold text-supporting-green mb-2'>
+                    {service.title}
+                  </h3>
+                  <p className='text-sm text-foreground whitespace-pre-line'>
+                    {service.description}
+                  </p>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>
