@@ -90,7 +90,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-20'>
           {services.map((service, index) => (
             <div key={index} className='flex flex-col items-center'>
               <button
