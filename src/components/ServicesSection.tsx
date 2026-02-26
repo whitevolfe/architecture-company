@@ -69,205 +69,82 @@ const ServicesSection = () => {
     >
       <div className='container-custom'>
         {/* Section Header */}
-        <div className='text-center max-w-3xl mx-auto mb-16'>
+        <div className='text-center max-w-3xl mx-auto mb-96'>
           <span className='inline-block text-sm font-medium text-supporting-green uppercase tracking-wider mb-4'>
             Our Services
           </span>
           <h2 className='heading-lg text-supporting-green mb-4'>
             Comprehensive Architecture & Design Solutions
           </h2>
-          <p className='body-base text-foreground'>
+          <p className='body-base text-supporting-green'>
             From initial concept to final delivery, we provide end-to-end
             architectural services tailored to the Sri Lankan context.
           </p>
         </div>
 
-        {/* Services Collage Buttons */}
-        <div className='grid grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-1 lg:[grid-template-rows:repeat(6,120px)]'>
-          {/* TOP ROW */}
-          {/* 1. Big square (left) - col-span-4 row-span-2 */}
-          <button
-            className='
-  col-span-1
-  lg:col-span-4 lg:row-span-2
-  relative
-  rotate-[3deg]
-  transition-all duration-700
-  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] lg:-translate-x-[6px]
-  -translate-y-[1px] lg:-translate-y-[3px]
-  z-20
-  group
-  flex justify-center items-center
-'
-          >
+        {/* Services Grid */}
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-60 mb-70'>
+          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
             <img
               src={services[0].icon}
               alt={services[0].title}
-              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
             />
           </button>
 
-          {/* 2. Small rectangle (top-center) - col-span-4 row-span-1 */}
-          <button
-            className='
-  col-span-1
-  lg:col-span-3 lg:row-span-2 lg:col-start-5
-  relative
-  rotate-[3deg]
-  transition-all duration-700
-  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] lg:-translate-x-[6px]
-  -translate-y-[1px] lg:-translate-y-[3px]
-  z-20
-  group
-  flex justify-center items-center
-'
-          >
+          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
             <img
               src={services[1].icon}
               alt={services[1].title}
-              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
             />
           </button>
 
-          {/* 3. Big rectangle (right) - col-span-4 row-span-2 */}
-          <button
-            className='
-  col-span-1
-  lg:col-span-4 lg:row-span-2 lg:col-start-9
-  relative
-  rotate-[3deg]
-  transition-all duration-700
-  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] lg:-translate-x-[6px]
-  -translate-y-[1px] lg:-translate-y-[3px]
-  z-20
-  group
-  flex justify-center items-center
-'
-          >
+          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
             <img
               src={services[2].icon}
               alt={services[2].title}
-              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
             />
           </button>
 
-          {/* MIDDLE ROW */}
-          {/* 4. Tall rectangle (left) - col-span-3 row-span-3 */}
-          <button
-            className='
-  col-span-1
-  lg:col-span-3 lg:row-span-3 lg:col-start-1 lg:row-start-3
-  relative
-  rotate-[3deg]
-  transition-all duration-700
-  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] lg:-translate-x-[6px]
-  -translate-y-[1px] lg:-translate-y-[3px]
-  z-20
-  group
-  flex justify-center items-center
-'
-          >
+          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
             <img
               src={services[3].icon}
               alt={services[3].title}
-              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
             />
           </button>
 
-          {/* 5. Long rectangle (center) - col-span-6 row-span-2 */}
-          <button
-            className='
-  col-span-1
-  lg:col-span-6 lg:row-span-2 lg:col-start-4 lg:row-start-3
-  relative
-  rotate-[3deg]
-  transition-all duration-700
-  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] lg:-translate-x-[6px]
-  -translate-y-[1px] lg:-translate-y-[3px]
-  z-20
-  group
-  flex justify-center items-center
-'
-          >
+          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
             <img
               src={services[4].icon}
               alt={services[4].title}
-              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
             />
           </button>
 
-          {/* 6. Tall rectangle (right) - col-span-3 row-span-3 */}
-          <button
-            className='
-  col-span-1
-  lg:col-span-3 lg:row-span-3 lg:col-start-10 lg:row-start-3
-  relative
-  rotate-[3deg]
-  transition-all duration-700
-  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] lg:-translate-x-[6px]
-  -translate-y-[1px] lg:-translate-y-[3px]
-  z-20
-  group
-  flex justify-center items-center
-'
-          >
+          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
             <img
               src={services[5].icon}
               alt={services[5].title}
-              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
             />
           </button>
 
-          {/* BOTTOM ROW */}
-          {/* 7. Small square - col-span-3 row-span-1 */}
-          <button
-            className='
-  col-span-1
-  lg:col-span-3 lg:row-span-2 lg:col-start-4 lg:row-start-6
-  relative
-  rotate-[3deg]
-  transition-all duration-700
-  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] lg:-translate-x-[6px]
-  -translate-y-[1px] lg:-translate-y-[3px]
-  z-20
-  group
-  flex justify-center items-center
-'
-          >
+          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
             <img
               src={services[6].icon}
               alt={services[6].title}
-              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
             />
           </button>
 
-          {/* 8. Small square - col-span-3 row-span-1 */}
-          <button
-            className='
-  col-span-1
-  lg:col-span-3 lg:row-span-2 lg:col-start-7 lg:row-start-6
-  relative
-  rotate-[3deg]
-  transition-all duration-700
-  hover:-translate-y-4 hover:rotate-0 hover:scale-[1.05]
-  -translate-x-[1px] lg:-translate-x-[6px]
-  -translate-y-[1px] lg:-translate-y-[3px]
-  z-20
-  group
-  flex justify-center items-center
-'
-          >
+          <button className='relative transition-all duration-700 hover:-translate-y-4 hover:scale-[1.05] group flex justify-center items-center'>
             <img
               src={services[7].icon}
               alt={services[7].title}
-              className='w-52 h-52 object-contain transition-transform duration-500 group-hover:scale-110 floating'
+              className='w-32 h-32 object-contain transition-transform duration-500 group-hover:scale-110'
             />
           </button>
         </div>

@@ -25,6 +25,20 @@ const ResidentialBuildingConcept = () => {
       <div className='container-custom relative z-20'>
         {/* Left Content - Text Blocks */}
         <div className='max-w-4xl space-y-8'>
+          {/* English Text Block */}
+          <div className='rounded-lg p-6'>
+            <p className='text-red-800 leading-relaxed text-lg md:text-xl'>
+              For a peaceful and independent life, owning a home of your own is
+              truly important. You may already have a vision for your dream
+              home. There is a saying, "A home reflects the personality of its
+              owner." This is where our involvement begins. Enhancing your ideas
+              and presenting them in a more creative and professional manner is
+              our responsibility. From planning, cost estimation, material
+              selection, and coordination with professionals to interior design
+              and 3D visualization, we are fully prepared to support every
+              aspect of your journey.
+            </p>
+          </div>
           {/* Sinhala Text Block */}
           <div className=' backdrop-blur-sm rounded-lg p-6 '>
             <p className='text-red-800 leading-relaxed font-medium text-lg md:text-xl'>
@@ -51,21 +65,6 @@ const ResidentialBuildingConcept = () => {
               தொழில்முறை நிபுணர்களின் ஒருங்கிணைப்பு, உள் அலங்காரம் மற்றும் 3D
               அனிமேஷன் உள்ளிட்ட அனைத்து சேவைகளையும் நாங்கள் வழங்கத் தயாராக
               உள்ளோம்.
-            </p>
-          </div>
-
-          {/* English Text Block */}
-          <div className='rounded-lg p-6'>
-            <p className='text-red-800 leading-relaxed text-lg md:text-xl'>
-              For a peaceful and independent life, owning a home of your own is
-              truly important. You may already have a vision for your dream
-              home. There is a saying, "A home reflects the personality of its
-              owner." This is where our involvement begins. Enhancing your ideas
-              and presenting them in a more creative and professional manner is
-              our responsibility. From planning, cost estimation, material
-              selection, and coordination with professionals to interior design
-              and 3D visualization, we are fully prepared to support every
-              aspect of your journey.
             </p>
           </div>
         </div>
