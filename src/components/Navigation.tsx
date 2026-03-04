@@ -49,7 +49,7 @@ const Navigation = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className='text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all after:duration-300 hover:after:w-full'
+                className='text-sm font-medium text-white hover:text-foreground transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all after:duration-300 hover:after:w-full'
               >
                 {link.name}
               </a>
@@ -62,7 +62,7 @@ const Navigation = () => {
               href='https://wa.me/94772709909'
               target='_blank'
               rel='noopener noreferrer'
-              className='flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors'
+              className='flex items-center gap-2 text-sm font-medium text-primary bold hover:text-red/100 transition-colors'
             >
               <Phone className='w-4 h-4' />
               <span>+94 77 270 9909</span>

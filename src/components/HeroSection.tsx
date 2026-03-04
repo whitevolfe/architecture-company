@@ -33,11 +33,11 @@ const HeroSection = () => {
 
             <h1 className='heading-xl text-text-light mb-6'>
               Modern Architecture &{' '}
-              <span className='text-primary-accent'>Smart Building</span>{' '}
+              <span className='text-primary-accent/100'>Smart Building</span>{' '}
               Solutions
             </h1>
 
-            <p className='body-lg text-supporting-green font-bold mb-4 max-w-2xl mx-auto'>
+            <p className='body-lg text-white/360 font-bold mb-4 max-w-2xl mx-auto'>
               Transform your vision into architectural masterpieces. From new
               builds to renovations, we bring world-class design to Sri Lanka.
             </p>
@@ -71,24 +71,26 @@ const HeroSection = () => {
             {/* Stats */}
             <div className='grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-secondary-accent/30 max-w-md mx-auto'>
               <div>
-                <div className='text-3xl md:text-4xl font-display font-bold text-primary-accent'>
+                <div className='text-3xl md:text-4xl font-display font-bold text-secondary-accent'>
                   25+
                 </div>
-                <div className='text-sm text-text-muted'>Years Experience</div>
+                <div className='text-sm text-white/360 bold font-display'>
+                  Years Experience
+                </div>
               </div>
               <div>
-                <div className='text-3xl md:text-4xl font-display font-bold text-primary-accent'>
+                <div className='text-3xl md:text-4xl font-display font-bold text-secondary-accent'>
                   500+
                 </div>
-                <div className='text-sm text-text-muted'>
+                <div className='text-sm text-white/360 bold font-display'>
                   Projects Completed
                 </div>
               </div>
               <div>
-                <div className='text-3xl md:text-4xl font-display font-bold text-primary-accent'>
+                <div className='text-3xl md:text-4xl font-display font-bold text-secondary-accent'>
                   98%
                 </div>
-                <div className='text-sm text-text-muted'>
+                <div className='text-sm text-white/360 bold font-display'>
                   Client Satisfaction
                 </div>
               </div>
