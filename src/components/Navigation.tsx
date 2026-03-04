@@ -39,7 +39,7 @@ const Navigation = () => {
             <img
               src={logoImage}
               alt='My Plan Architectural Studio Logo'
-              className='h-10 w-auto'
+              className='h-10 w-50'
             />
           </a>
 

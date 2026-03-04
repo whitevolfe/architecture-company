@@ -105,7 +105,7 @@ const ServicesSection = () => {
               </button>
               {expandedService === index && (
                 <div className='text-center max-w-xs'>
-                  <h3 className='text-lg font-semibold text-supporting-green mb-2'>
+                  <h3 className='text-lg font-bold text-black mb-2'>
                     {service.title}
                   </h3>
                   <p className='text-sm text-foreground whitespace-pre-line'>
